@@ -1,0 +1,96 @@
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\SI_Pelunasan_Hutang_Farmasi.exe.config
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\SI_Pelunasan_Hutang_Farmasi.exe
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\SI_Pelunasan_Hutang_Farmasi.pdb
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\SI_Pelunasan_Hutang_Farmasi.xml
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.FormKoneksi.resources
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.MenuUtama.resources
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.Resources.resources
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.vbproj.GenerateResource.Cache
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.exe
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.xml
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.pdb
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.FormLogin.resources
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.FormPelunasanHutang.resources
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.FormEditPelunasanHutang.resources
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.formLaporanHutang.resources
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Grid.Base.dll
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Grid.Windows.dll
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Shared.Base.dll
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Shared.Windows.dll
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Tools.Base.dll
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Tools.Windows.dll
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.XlsIO.Base.dll
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Grid.Base.xml
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Grid.Windows.xml
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Shared.Base.xml
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Shared.Windows.xml
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Tools.Base.xml
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Tools.Windows.xml
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.XlsIO.Base.xml
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Grid.Windows.XmlSerializers.dll
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Compression.Base.dll
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Compression.Base.xml
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.FormLaporanPelunasan.resources
+F:\Program\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.FormLaporanTandaTerima.resources
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\SI_Pelunasan_Hutang_Farmasi.exe.config
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\SI_Pelunasan_Hutang_Farmasi.exe
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\SI_Pelunasan_Hutang_Farmasi.pdb
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\SI_Pelunasan_Hutang_Farmasi.xml
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\EnvDTE.dll
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\stdole.dll
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Compression.Base.xml
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Grid.Base.xml
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Grid.Windows.xml
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Shared.Base.xml
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Shared.Windows.xml
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Tools.Base.xml
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Tools.Windows.xml
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.XlsIO.Base.xml
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Grid.Windows.XmlSerializers.dll
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.vbprojAssemblyReference.cache
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.formLaporanHutang.resources
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.FormKoneksi.resources
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.FormLogin.resources
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.FormLaporanPelunasan.resources
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.FormLaporanTandaTerima.resources
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.FormEditPelunasanHutang.resources
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.FormPelunasanHutang.resources
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.MenuUtama.resources
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.Resources.resources
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.vbproj.GenerateResource.cache
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.vbproj.CoreCompileInputs.cache
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.vbproj.CopyComplete
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.exe
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.xml
+D:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.pdb
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\SI_Pelunasan_Hutang_Farmasi.exe.config
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\SI_Pelunasan_Hutang_Farmasi.exe
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\SI_Pelunasan_Hutang_Farmasi.pdb
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\SI_Pelunasan_Hutang_Farmasi.xml
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\EnvDTE.dll
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\stdole.dll
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Compression.Base.xml
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Grid.Base.xml
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Grid.Windows.xml
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Shared.Base.xml
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Shared.Windows.xml
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Tools.Base.xml
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Tools.Windows.xml
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.XlsIO.Base.xml
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\bin\Debug\Syncfusion.Grid.Windows.XmlSerializers.dll
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.vbprojAssemblyReference.cache
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.formLaporanHutang.resources
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.FormKoneksi.resources
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.FormLogin.resources
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.FormLaporanPelunasan.resources
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.FormLaporanTandaTerima.resources
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.FormEditPelunasanHutang.resources
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.FormPelunasanHutang.resources
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.MenuUtama.resources
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.Resources.resources
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.vbproj.GenerateResource.cache
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.vbproj.CoreCompileInputs.cache
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.vbproj.CopyComplete
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.exe
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.xml
+F:\DOT NET\SI_Pelunasan_Hutang_Farmasi\SI_Pelunasan_Hutang_Farmasi\obj\Debug\SI_Pelunasan_Hutang_Farmasi.pdb
