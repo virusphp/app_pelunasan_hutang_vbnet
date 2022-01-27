@@ -1,10 +1,9 @@
-﻿Imports Syncfusion.Windows.Forms
+﻿
 
 Public Class FormKoneksi
-    Inherits MetroForm
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If DatabaseConnected(txtDbServer.Text, txtDbUser.Text, _
+        If DatabaseConnected(txtDbServer.Text, txtDbUser.Text,
                              txtDbPassword.Text, txtDbName.Text) = True Then
             With My.Settings
                 .dbServer = txtDbServer.Text

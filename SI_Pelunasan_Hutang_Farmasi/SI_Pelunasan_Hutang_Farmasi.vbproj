@@ -131,6 +131,12 @@
     <Compile Include="MenuLaporan\FormLaporanTandaTerima.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MenuLaporan\FormRekapHutang.Designer.vb">
+      <DependentUpon>FormRekapHutang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuLaporan\FormRekapHutang.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MenuPelunasan\FormEditPelunasanHutang.Designer.vb">
       <DependentUpon>FormEditPelunasanHutang.vb</DependentUpon>
     </Compile>
@@ -149,10 +155,12 @@
     <Compile Include="MenuUtama.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Modul\DataManager.vb" />
     <Compile Include="Modul\Enkripsi.vb" />
     <Compile Include="Modul\JamServer.vb" />
     <Compile Include="Modul\Koneksi.vb" />
     <Compile Include="Modul\ModulAplikasi.vb" />
+    <Compile Include="Modul\ModulSession.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -186,6 +194,9 @@
     <EmbeddedResource Include="MenuLaporan\FormLaporanTandaTerima.resx">
       <DependentUpon>FormLaporanTandaTerima.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenuLaporan\FormRekapHutang.resx">
+      <DependentUpon>FormRekapHutang.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuPelunasan\FormEditPelunasanHutang.resx">
       <DependentUpon>FormEditPelunasanHutang.vb</DependentUpon>
     </EmbeddedResource>
@@ -215,6 +226,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Image1.png" />
+    <None Include="Resources\BackgroundForm.png" />
+    <None Include="Resources\user_help.gif" />
     <Content Include="Sirubico-Black-Metal-PC-a.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

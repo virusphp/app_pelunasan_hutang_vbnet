@@ -305,7 +305,7 @@ Partial Class FormEditPelunasanHutang
         'txtJumlahBayar
         '
         Me.txtJumlahBayar.BackGroundColor = System.Drawing.SystemColors.Info
-        Me.txtJumlahBayar.BeforeTouchSize = New System.Drawing.Size(46, 20)
+        Me.txtJumlahBayar.BeforeTouchSize = New System.Drawing.Size(87, 20)
         Me.txtJumlahBayar.BorderColor = System.Drawing.Color.DimGray
         Me.txtJumlahBayar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtJumlahBayar.Culture = New System.Globalization.CultureInfo("en-US")
@@ -348,7 +348,7 @@ Partial Class FormEditPelunasanHutang
         'txtSisaHutang
         '
         Me.txtSisaHutang.BackGroundColor = System.Drawing.SystemColors.Info
-        Me.txtSisaHutang.BeforeTouchSize = New System.Drawing.Size(46, 20)
+        Me.txtSisaHutang.BeforeTouchSize = New System.Drawing.Size(87, 20)
         Me.txtSisaHutang.BorderColor = System.Drawing.Color.DimGray
         Me.txtSisaHutang.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtSisaHutang.Culture = New System.Globalization.CultureInfo("en-US")
@@ -392,7 +392,7 @@ Partial Class FormEditPelunasanHutang
         'txtAngsur
         '
         Me.txtAngsur.BackGroundColor = System.Drawing.SystemColors.Info
-        Me.txtAngsur.BeforeTouchSize = New System.Drawing.Size(46, 20)
+        Me.txtAngsur.BeforeTouchSize = New System.Drawing.Size(87, 20)
         Me.txtAngsur.BorderColor = System.Drawing.Color.DimGray
         Me.txtAngsur.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtAngsur.Culture = New System.Globalization.CultureInfo("en-US")
@@ -436,7 +436,7 @@ Partial Class FormEditPelunasanHutang
         'txtRetur
         '
         Me.txtRetur.BackGroundColor = System.Drawing.SystemColors.Info
-        Me.txtRetur.BeforeTouchSize = New System.Drawing.Size(46, 20)
+        Me.txtRetur.BeforeTouchSize = New System.Drawing.Size(87, 20)
         Me.txtRetur.BorderColor = System.Drawing.Color.DimGray
         Me.txtRetur.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtRetur.Culture = New System.Globalization.CultureInfo("en-US")
@@ -535,7 +535,7 @@ Partial Class FormEditPelunasanHutang
         'txtHutang
         '
         Me.txtHutang.BackGroundColor = System.Drawing.SystemColors.Info
-        Me.txtHutang.BeforeTouchSize = New System.Drawing.Size(46, 20)
+        Me.txtHutang.BeforeTouchSize = New System.Drawing.Size(87, 20)
         Me.txtHutang.BorderColor = System.Drawing.Color.DimGray
         Me.txtHutang.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtHutang.Culture = New System.Globalization.CultureInfo("en-US")
@@ -620,7 +620,7 @@ Partial Class FormEditPelunasanHutang
         'txtGrandJumlahHargaBulat
         '
         Me.txtGrandJumlahHargaBulat.BackGroundColor = System.Drawing.SystemColors.Info
-        Me.txtGrandJumlahHargaBulat.BeforeTouchSize = New System.Drawing.Size(46, 20)
+        Me.txtGrandJumlahHargaBulat.BeforeTouchSize = New System.Drawing.Size(87, 20)
         Me.txtGrandJumlahHargaBulat.BorderColor = System.Drawing.Color.DimGray
         Me.txtGrandJumlahHargaBulat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtGrandJumlahHargaBulat.Culture = New System.Globalization.CultureInfo("en-US")
@@ -663,7 +663,7 @@ Partial Class FormEditPelunasanHutang
         'txtGrandJumlahHarga
         '
         Me.txtGrandJumlahHarga.BackGroundColor = System.Drawing.SystemColors.Info
-        Me.txtGrandJumlahHarga.BeforeTouchSize = New System.Drawing.Size(46, 20)
+        Me.txtGrandJumlahHarga.BeforeTouchSize = New System.Drawing.Size(87, 20)
         Me.txtGrandJumlahHarga.BorderColor = System.Drawing.Color.DimGray
         Me.txtGrandJumlahHarga.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtGrandJumlahHarga.Culture = New System.Globalization.CultureInfo("en-US")
@@ -686,7 +686,7 @@ Partial Class FormEditPelunasanHutang
         'txtQty
         '
         Me.txtQty.BackGroundColor = System.Drawing.SystemColors.Info
-        Me.txtQty.BeforeTouchSize = New System.Drawing.Size(46, 20)
+        Me.txtQty.BeforeTouchSize = New System.Drawing.Size(87, 20)
         Me.txtQty.BorderColor = System.Drawing.Color.DimGray
         Me.txtQty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtQty.Culture = New System.Globalization.CultureInfo("en-US")
@@ -968,6 +968,7 @@ Partial Class FormEditPelunasanHutang
         Me.Controls.Add(Me.GroupBox5)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GBHeader)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
         Me.Name = "FormEditPelunasanHutang"
         Me.ShowInTaskbar = False

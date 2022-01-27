@@ -100,7 +100,15 @@ Public Class FormLaporanPelunasan
     Sub tampilLaporan()
         Try
             konek()
-            DA = New SqlDataAdapter("SELECT ap_anghutang.tglbayar, ap_anghutang.nobayar, ap_anghutang.keterangan, RTRIM(LTRIM(ap_anghutang.nmsuplier)) AS nmsuplier, ap_anghutang.nofaktur, ap_anghutang.a2, ap_anghutang.notabeli, ap_anghutang.tglfaktur, ap_beli1.hrgbeli, ap_beli1.jmlretur, ap_anghutang.jmlangsur, ap_beli1.sisahtg, ap_anghutang.kdsuplier, CASE ap_anghutang.posting WHEN '1' THEN 'Belum' ELSE 'Sudah' END AS posting, ap_beli1.kd_jns_obat FROM ap_anghutang INNER JOIN ap_beli1 ON ap_anghutang.notabeli = ap_beli1.notabeli WHERE ap_anghutang.tglbayar>='" & Format(DTPTanggalAwalTab1.Value, "yyyy/MM/dd") & "' and ap_anghutang.tglbayar<='" & Format(DTPTanggalAkhirTab1.Value, "yyyy/MM/dd") & "' order by ap_anghutang.tglbayar, ap_anghutang.nobayar", CONN)
+            DA = New SqlDataAdapter("SELECT ap_anghutang.tglbayar, ap_anghutang.nobayar, ap_anghutang.keterangan, 
+RTRIM(LTRIM(ap_anghutang.nmsuplier)) AS nmsuplier, ap_anghutang.nofaktur, ap_anghutang.a2, ap_anghutang.notabeli, 
+ap_anghutang.tglfaktur, ap_beli1.hrgbeli, ap_beli1.jmlretur, ap_anghutang.jmlangsur, ap_beli1.sisahtg, ap_anghutang.kdsuplier, 
+CASE ap_anghutang.posting WHEN '1' THEN 'Belum' ELSE 'Sudah' END AS posting, ap_beli1.kd_jns_obat FROM ap_anghutang 
+INNER JOIN ap_beli1 ON ap_anghutang.notabeli = ap_beli1.notabeli 
+WHERE ap_anghutang.tglbayar>='" & Format(DTPTanggalAwalTab1.Value, "yyyy/MM/dd") &
+"' and ap_anghutang.tglbayar<='" & Format(DTPTanggalAkhirTab1.Value, "yyyy/MM/dd") &
+"' order by ap_anghutang.tglbayar, ap_anghutang.nobayar", CONN)
+
             'DA = New SqlDataAdapter("SELECT ap_anghutang.tglbayar, ap_anghutang.nobayar, ap_anghutang.keterangan, RTRIM(LTRIM(ap_anghutang.nmsuplier)) AS nmsuplier, ap_anghutang.nofaktur, ap_anghutang.a2, ap_anghutang.notabeli, ap_anghutang.tglfaktur, ap_beli1.hrgbeli, ap_beli1.jmlretur, ap_anghutang.jmlangsur, ap_beli1.sisahtg, ap_anghutang.kdsuplier, CASE ap_anghutang.posting WHEN '1' THEN 'Belum' ELSE 'Sudah' END AS posting, ap_beli1.kd_jns_obat FROM ap_anghutang INNER JOIN ap_beli1 ON ap_anghutang.notabeli = ap_beli1.notabeli WHERE ap_beli1.tglfaktur>='" & Format(DTPTanggalAwalTab1.Value, "yyyy/MM/dd") & "' and ap_beli1.tglfaktur<='" & Format(DTPTanggalAkhirTab1.Value, "yyyy/MM/dd") & "' order by ap_anghutang.tglbayar, ap_anghutang.nobayar", CONN)
             DS = New DataSet
             DA.Fill(DS, "Laporan")

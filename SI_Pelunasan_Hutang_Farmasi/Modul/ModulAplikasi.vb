@@ -1,6 +1,15 @@
 ﻿Imports System.Globalization
 
 Module ModulAplikasi
+    Public Sub addImegeOnGrid(e As DataGridViewCellPaintingEventArgs, ByVal colIndex As Integer, ByVal image As Image)
+        If e.ColumnIndex = colIndex AndAlso e.RowIndex >= 0 Then
+            e.Paint(e.CellBounds, DataGridViewPaintParts.All)
+            Dim bm As New Drawing.Bitmap(image)
+            e.Graphics.DrawImage(bm, CInt((e.CellBounds.Width / 2) - (bm.Width / 2)) + e.CellBounds.X, CInt((e.CellBounds.Height / 2) - (bm.Height / 2)) + e.CellBounds.Y)
+            e.Handled = True
+        End If
+    End Sub
+
     Public Function buletin(ByVal Number As Double, Optional range As Integer = 10) As Double
         buletin = (Math.Round((Number / range) + 0.49)) * range
     End Function

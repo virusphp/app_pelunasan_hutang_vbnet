@@ -1,6 +1,6 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormPelunasanHutang
-    Inherits Syncfusion.Windows.Forms.MetroForm
+    Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()> _
@@ -24,7 +24,6 @@ Partial Class FormPelunasanHutang
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormPelunasanHutang))
-        Me.GBHeader = New System.Windows.Forms.GroupBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.txtKodeSupplier = New System.Windows.Forms.TextBox()
         Me.txtSupplier = New System.Windows.Forms.TextBox()
@@ -35,8 +34,7 @@ Partial Class FormPelunasanHutang
         Me.txtSPM = New System.Windows.Forms.TextBox()
         Me.DTPTanggalTrans = New System.Windows.Forms.DateTimePicker()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
-        Me.ButtonAdv2 = New Syncfusion.Windows.Forms.ButtonAdv()
+        Me.cmdHapusBaris = New Syncfusion.Windows.Forms.ButtonAdv()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.txtGrandJumlahHargaBulat = New Syncfusion.Windows.Forms.Tools.CurrencyTextBox()
@@ -44,11 +42,9 @@ Partial Class FormPelunasanHutang
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtGrandJumlahHarga = New Syncfusion.Windows.Forms.Tools.CurrencyTextBox()
         Me.txtQty = New Syncfusion.Windows.Forms.Tools.CurrencyTextBox()
-        Me.GroupBox7 = New System.Windows.Forms.GroupBox()
         Me.btnKeluar = New Syncfusion.Windows.Forms.ButtonAdv()
         Me.btnBaru = New Syncfusion.Windows.Forms.ButtonAdv()
         Me.btnSimpan = New Syncfusion.Windows.Forms.ButtonAdv()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.txtA2 = New System.Windows.Forms.TextBox()
         Me.btnAdd = New Syncfusion.Windows.Forms.ButtonAdv()
@@ -75,28 +71,24 @@ Partial Class FormPelunasanHutang
         Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.gridPelunasan = New System.Windows.Forms.DataGridView()
         Me.PanelSupplier = New System.Windows.Forms.Panel()
-        Me.GroupBox12 = New System.Windows.Forms.GroupBox()
         Me.gridSupplier = New System.Windows.Forms.DataGridView()
         Me.Column2 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.GroupBox11 = New System.Windows.Forms.GroupBox()
         Me.Label33 = New System.Windows.Forms.Label()
         Me.txtCariSupplier = New System.Windows.Forms.TextBox()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.PanelNotaBeli = New System.Windows.Forms.Panel()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.gridNotaBeli = New System.Windows.Forms.DataGridView()
         Me.DataGridViewImageColumn2 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.GroupBox8 = New System.Windows.Forms.GroupBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.txtCariFaktur = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.GBHeader.SuspendLayout()
-        Me.GroupBox5.SuspendLayout()
+        Me.GBHeader = New System.Windows.Forms.Panel()
+        Me.GroupBox4 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         CType(Me.txtGrandJumlahHargaBulat, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtGrandJumlahHarga, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtQty, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox7.SuspendLayout()
-        Me.GroupBox4.SuspendLayout()
         CType(Me.txtJumlahBayar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtSisaHutang, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtAngsur, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -104,33 +96,14 @@ Partial Class FormPelunasanHutang
         CType(Me.txtHutang, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.gridPelunasan, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelSupplier.SuspendLayout()
-        Me.GroupBox12.SuspendLayout()
         CType(Me.gridSupplier, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox11.SuspendLayout()
         Me.PanelNotaBeli.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
         CType(Me.gridNotaBeli, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox8.SuspendLayout()
+        Me.GBHeader.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
+        Me.Panel2.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'GBHeader
-        '
-        Me.GBHeader.Controls.Add(Me.Label14)
-        Me.GBHeader.Controls.Add(Me.txtKodeSupplier)
-        Me.GBHeader.Controls.Add(Me.txtSupplier)
-        Me.GBHeader.Controls.Add(Me.Label3)
-        Me.GBHeader.Controls.Add(Me.txtKeterangan)
-        Me.GBHeader.Controls.Add(Me.Label7)
-        Me.GBHeader.Controls.Add(Me.Label2)
-        Me.GBHeader.Controls.Add(Me.txtSPM)
-        Me.GBHeader.Controls.Add(Me.DTPTanggalTrans)
-        Me.GBHeader.Controls.Add(Me.Label1)
-        Me.GBHeader.Dock = System.Windows.Forms.DockStyle.Top
-        Me.GBHeader.Location = New System.Drawing.Point(0, 0)
-        Me.GBHeader.Name = "GBHeader"
-        Me.GBHeader.Size = New System.Drawing.Size(899, 113)
-        Me.GBHeader.TabIndex = 14
-        Me.GBHeader.TabStop = False
         '
         'Label14
         '
@@ -138,7 +111,7 @@ Partial Class FormPelunasanHutang
         Me.Label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label14.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label14.Location = New System.Drawing.Point(627, 13)
+        Me.Label14.Location = New System.Drawing.Point(628, 2)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(266, 23)
         Me.Label14.TabIndex = 130
@@ -148,7 +121,7 @@ Partial Class FormPelunasanHutang
         '
         Me.txtKodeSupplier.BackColor = System.Drawing.SystemColors.Info
         Me.txtKodeSupplier.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtKodeSupplier.Location = New System.Drawing.Point(104, 82)
+        Me.txtKodeSupplier.Location = New System.Drawing.Point(97, 71)
         Me.txtKodeSupplier.Name = "txtKodeSupplier"
         Me.txtKodeSupplier.ReadOnly = True
         Me.txtKodeSupplier.Size = New System.Drawing.Size(93, 20)
@@ -157,7 +130,7 @@ Partial Class FormPelunasanHutang
         'txtSupplier
         '
         Me.txtSupplier.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtSupplier.Location = New System.Drawing.Point(199, 82)
+        Me.txtSupplier.Location = New System.Drawing.Point(192, 71)
         Me.txtSupplier.Name = "txtSupplier"
         Me.txtSupplier.ReadOnly = True
         Me.txtSupplier.Size = New System.Drawing.Size(466, 20)
@@ -165,8 +138,8 @@ Partial Class FormPelunasanHutang
         '
         'Label3
         '
-        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label3.Location = New System.Drawing.Point(12, 83)
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Location = New System.Drawing.Point(8, 72)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(87, 20)
         Me.Label3.TabIndex = 129
@@ -176,15 +149,15 @@ Partial Class FormPelunasanHutang
         '
         Me.txtKeterangan.BackColor = System.Drawing.SystemColors.Info
         Me.txtKeterangan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtKeterangan.Location = New System.Drawing.Point(104, 60)
+        Me.txtKeterangan.Location = New System.Drawing.Point(97, 49)
         Me.txtKeterangan.Name = "txtKeterangan"
         Me.txtKeterangan.Size = New System.Drawing.Size(561, 20)
         Me.txtKeterangan.TabIndex = 2
         '
         'Label7
         '
-        Me.Label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label7.Location = New System.Drawing.Point(12, 60)
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
+        Me.Label7.Location = New System.Drawing.Point(8, 49)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(87, 20)
         Me.Label7.TabIndex = 27
@@ -192,8 +165,8 @@ Partial Class FormPelunasanHutang
         '
         'Label2
         '
-        Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label2.Location = New System.Drawing.Point(12, 38)
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Location = New System.Drawing.Point(8, 27)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(87, 20)
         Me.Label2.TabIndex = 17
@@ -204,61 +177,43 @@ Partial Class FormPelunasanHutang
         Me.txtSPM.BackColor = System.Drawing.SystemColors.Info
         Me.txtSPM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtSPM.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSPM.Location = New System.Drawing.Point(104, 38)
+        Me.txtSPM.Location = New System.Drawing.Point(97, 27)
         Me.txtSPM.Name = "txtSPM"
         Me.txtSPM.Size = New System.Drawing.Size(215, 20)
         Me.txtSPM.TabIndex = 1
         '
         'DTPTanggalTrans
         '
-        Me.DTPTanggalTrans.Location = New System.Drawing.Point(104, 16)
+        Me.DTPTanggalTrans.Location = New System.Drawing.Point(97, 5)
         Me.DTPTanggalTrans.Name = "DTPTanggalTrans"
         Me.DTPTanggalTrans.Size = New System.Drawing.Size(215, 20)
         Me.DTPTanggalTrans.TabIndex = 0
         '
         'Label1
         '
-        Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label1.Location = New System.Drawing.Point(12, 16)
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Location = New System.Drawing.Point(8, 5)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(87, 20)
         Me.Label1.TabIndex = 11
         Me.Label1.Text = "Tanggal"
         '
-        'GroupBox5
+        'cmdHapusBaris
         '
-        Me.GroupBox5.Controls.Add(Me.ButtonAdv2)
-        Me.GroupBox5.Controls.Add(Me.TextBox3)
-        Me.GroupBox5.Controls.Add(Me.TextBox2)
-        Me.GroupBox5.Controls.Add(Me.txtGrandJumlahHargaBulat)
-        Me.GroupBox5.Controls.Add(Me.Label8)
-        Me.GroupBox5.Controls.Add(Me.Label6)
-        Me.GroupBox5.Controls.Add(Me.txtGrandJumlahHarga)
-        Me.GroupBox5.Controls.Add(Me.txtQty)
-        Me.GroupBox5.Controls.Add(Me.GroupBox7)
-        Me.GroupBox5.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.GroupBox5.Location = New System.Drawing.Point(0, 485)
-        Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(899, 106)
-        Me.GroupBox5.TabIndex = 16
-        Me.GroupBox5.TabStop = False
-        '
-        'ButtonAdv2
-        '
-        Me.ButtonAdv2.BeforeTouchSize = New System.Drawing.Size(82, 23)
-        Me.ButtonAdv2.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.ButtonAdv2.IsBackStageButton = False
-        Me.ButtonAdv2.Location = New System.Drawing.Point(801, 12)
-        Me.ButtonAdv2.Name = "ButtonAdv2"
-        Me.ButtonAdv2.Size = New System.Drawing.Size(82, 23)
-        Me.ButtonAdv2.TabIndex = 138
-        Me.ButtonAdv2.Text = "Hapus Baris"
+        Me.cmdHapusBaris.BeforeTouchSize = New System.Drawing.Size(82, 23)
+        Me.cmdHapusBaris.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.cmdHapusBaris.IsBackStageButton = False
+        Me.cmdHapusBaris.Location = New System.Drawing.Point(823, 266)
+        Me.cmdHapusBaris.Name = "cmdHapusBaris"
+        Me.cmdHapusBaris.Size = New System.Drawing.Size(82, 23)
+        Me.cmdHapusBaris.TabIndex = 138
+        Me.cmdHapusBaris.Text = "Hapus Baris"
         '
         'TextBox3
         '
         Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(108, 33)
+        Me.TextBox3.Location = New System.Drawing.Point(108, 287)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.ReadOnly = True
         Me.TextBox3.Size = New System.Drawing.Size(34, 20)
@@ -269,7 +224,7 @@ Partial Class FormPelunasanHutang
         '
         Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(108, 10)
+        Me.TextBox2.Location = New System.Drawing.Point(108, 264)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.ReadOnly = True
         Me.TextBox2.Size = New System.Drawing.Size(34, 20)
@@ -287,7 +242,7 @@ Partial Class FormPelunasanHutang
         Me.txtGrandJumlahHargaBulat.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtGrandJumlahHargaBulat.DecimalValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.txtGrandJumlahHargaBulat.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtGrandJumlahHargaBulat.Location = New System.Drawing.Point(141, 33)
+        Me.txtGrandJumlahHargaBulat.Location = New System.Drawing.Point(141, 287)
         Me.txtGrandJumlahHargaBulat.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.txtGrandJumlahHargaBulat.Name = "txtGrandJumlahHargaBulat"
         Me.txtGrandJumlahHargaBulat.NullString = ""
@@ -302,7 +257,7 @@ Partial Class FormPelunasanHutang
         'Label8
         '
         Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label8.Location = New System.Drawing.Point(373, 10)
+        Me.Label8.Location = New System.Drawing.Point(373, 264)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(46, 20)
         Me.Label8.TabIndex = 24
@@ -312,7 +267,7 @@ Partial Class FormPelunasanHutang
         'Label6
         '
         Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label6.Location = New System.Drawing.Point(12, 10)
+        Me.Label6.Location = New System.Drawing.Point(12, 264)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(130, 20)
         Me.Label6.TabIndex = 23
@@ -330,7 +285,7 @@ Partial Class FormPelunasanHutang
         Me.txtGrandJumlahHarga.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtGrandJumlahHarga.DecimalValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.txtGrandJumlahHarga.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtGrandJumlahHarga.Location = New System.Drawing.Point(141, 10)
+        Me.txtGrandJumlahHarga.Location = New System.Drawing.Point(141, 264)
         Me.txtGrandJumlahHarga.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.txtGrandJumlahHarga.Name = "txtGrandJumlahHarga"
         Me.txtGrandJumlahHarga.NullString = ""
@@ -353,7 +308,7 @@ Partial Class FormPelunasanHutang
         Me.txtQty.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtQty.DecimalValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.txtQty.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtQty.Location = New System.Drawing.Point(373, 33)
+        Me.txtQty.Location = New System.Drawing.Point(373, 287)
         Me.txtQty.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.txtQty.Name = "txtQty"
         Me.txtQty.NullString = ""
@@ -365,26 +320,13 @@ Partial Class FormPelunasanHutang
         Me.txtQty.Text = "0.00"
         Me.txtQty.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'GroupBox7
-        '
-        Me.GroupBox7.Controls.Add(Me.btnKeluar)
-        Me.GroupBox7.Controls.Add(Me.btnBaru)
-        Me.GroupBox7.Controls.Add(Me.btnSimpan)
-        Me.GroupBox7.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.GroupBox7.Location = New System.Drawing.Point(3, 51)
-        Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Size = New System.Drawing.Size(893, 52)
-        Me.GroupBox7.TabIndex = 1
-        Me.GroupBox7.TabStop = False
-        '
         'btnKeluar
         '
         Me.btnKeluar.BeforeTouchSize = New System.Drawing.Size(120, 33)
-        Me.btnKeluar.Dock = System.Windows.Forms.DockStyle.Left
         Me.btnKeluar.Image = CType(resources.GetObject("btnKeluar.Image"), System.Drawing.Image)
         Me.btnKeluar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnKeluar.IsBackStageButton = False
-        Me.btnKeluar.Location = New System.Drawing.Point(243, 16)
+        Me.btnKeluar.Location = New System.Drawing.Point(246, 3)
         Me.btnKeluar.Name = "btnKeluar"
         Me.btnKeluar.Size = New System.Drawing.Size(120, 33)
         Me.btnKeluar.TabIndex = 4
@@ -394,11 +336,10 @@ Partial Class FormPelunasanHutang
         'btnBaru
         '
         Me.btnBaru.BeforeTouchSize = New System.Drawing.Size(120, 33)
-        Me.btnBaru.Dock = System.Windows.Forms.DockStyle.Left
         Me.btnBaru.Image = CType(resources.GetObject("btnBaru.Image"), System.Drawing.Image)
         Me.btnBaru.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnBaru.IsBackStageButton = False
-        Me.btnBaru.Location = New System.Drawing.Point(123, 16)
+        Me.btnBaru.Location = New System.Drawing.Point(126, 3)
         Me.btnBaru.Name = "btnBaru"
         Me.btnBaru.Size = New System.Drawing.Size(120, 33)
         Me.btnBaru.TabIndex = 3
@@ -408,55 +349,20 @@ Partial Class FormPelunasanHutang
         'btnSimpan
         '
         Me.btnSimpan.BeforeTouchSize = New System.Drawing.Size(120, 33)
-        Me.btnSimpan.Dock = System.Windows.Forms.DockStyle.Left
         Me.btnSimpan.Image = CType(resources.GetObject("btnSimpan.Image"), System.Drawing.Image)
         Me.btnSimpan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnSimpan.IsBackStageButton = False
-        Me.btnSimpan.Location = New System.Drawing.Point(3, 16)
+        Me.btnSimpan.Location = New System.Drawing.Point(6, 3)
         Me.btnSimpan.Name = "btnSimpan"
         Me.btnSimpan.Size = New System.Drawing.Size(120, 33)
         Me.btnSimpan.TabIndex = 1
         Me.btnSimpan.Text = "Simpan [F12]"
         Me.btnSimpan.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'GroupBox4
-        '
-        Me.GroupBox4.Controls.Add(Me.Label15)
-        Me.GroupBox4.Controls.Add(Me.txtA2)
-        Me.GroupBox4.Controls.Add(Me.btnAdd)
-        Me.GroupBox4.Controls.Add(Me.Label12)
-        Me.GroupBox4.Controls.Add(Me.txtJumlahBayar)
-        Me.GroupBox4.Controls.Add(Me.TextBox5)
-        Me.GroupBox4.Controls.Add(Me.Label13)
-        Me.GroupBox4.Controls.Add(Me.txtSisaHutang)
-        Me.GroupBox4.Controls.Add(Me.TextBox6)
-        Me.GroupBox4.Controls.Add(Me.Label11)
-        Me.GroupBox4.Controls.Add(Me.txtAngsur)
-        Me.GroupBox4.Controls.Add(Me.TextBox4)
-        Me.GroupBox4.Controls.Add(Me.Label10)
-        Me.GroupBox4.Controls.Add(Me.txtRetur)
-        Me.GroupBox4.Controls.Add(Me.TextBox1)
-        Me.GroupBox4.Controls.Add(Me.DTPTanggalFaktur)
-        Me.GroupBox4.Controls.Add(Me.Label9)
-        Me.GroupBox4.Controls.Add(Me.txtNoFaktur)
-        Me.GroupBox4.Controls.Add(Me.Label4)
-        Me.GroupBox4.Controls.Add(Me.txtNotaBeli)
-        Me.GroupBox4.Controls.Add(Me.Label5)
-        Me.GroupBox4.Controls.Add(Me.Label18)
-        Me.GroupBox4.Controls.Add(Me.txtHutang)
-        Me.GroupBox4.Controls.Add(Me.TextBox10)
-        Me.GroupBox4.Dock = System.Windows.Forms.DockStyle.Top
-        Me.GroupBox4.Location = New System.Drawing.Point(0, 113)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(899, 156)
-        Me.GroupBox4.TabIndex = 17
-        Me.GroupBox4.TabStop = False
-        '
         'Label15
         '
         Me.Label15.BackColor = System.Drawing.Color.Transparent
-        Me.Label15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label15.Location = New System.Drawing.Point(325, 125)
+        Me.Label15.Location = New System.Drawing.Point(317, 93)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(87, 20)
         Me.Label15.TabIndex = 144
@@ -465,7 +371,8 @@ Partial Class FormPelunasanHutang
         'txtA2
         '
         Me.txtA2.BackColor = System.Drawing.SystemColors.Info
-        Me.txtA2.Location = New System.Drawing.Point(417, 125)
+        Me.txtA2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtA2.Location = New System.Drawing.Point(409, 93)
         Me.txtA2.Name = "txtA2"
         Me.txtA2.Size = New System.Drawing.Size(215, 20)
         Me.txtA2.TabIndex = 143
@@ -476,7 +383,7 @@ Partial Class FormPelunasanHutang
         Me.btnAdd.Image = CType(resources.GetObject("btnAdd.Image"), System.Drawing.Image)
         Me.btnAdd.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnAdd.IsBackStageButton = False
-        Me.btnAdd.Location = New System.Drawing.Point(840, 80)
+        Me.btnAdd.Location = New System.Drawing.Point(628, 49)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(43, 65)
         Me.btnAdd.TabIndex = 142
@@ -486,8 +393,7 @@ Partial Class FormPelunasanHutang
         'Label12
         '
         Me.Label12.BackColor = System.Drawing.Color.Transparent
-        Me.Label12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label12.Location = New System.Drawing.Point(325, 103)
+        Me.Label12.Location = New System.Drawing.Point(317, 71)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(87, 20)
         Me.Label12.TabIndex = 141
@@ -504,7 +410,7 @@ Partial Class FormPelunasanHutang
         Me.txtJumlahBayar.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtJumlahBayar.DecimalValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.txtJumlahBayar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtJumlahBayar.Location = New System.Drawing.Point(439, 103)
+        Me.txtJumlahBayar.Location = New System.Drawing.Point(431, 71)
         Me.txtJumlahBayar.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.txtJumlahBayar.Name = "txtJumlahBayar"
         Me.txtJumlahBayar.NullString = ""
@@ -519,7 +425,7 @@ Partial Class FormPelunasanHutang
         '
         Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(417, 103)
+        Me.TextBox5.Location = New System.Drawing.Point(409, 71)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.ReadOnly = True
         Me.TextBox5.Size = New System.Drawing.Size(34, 20)
@@ -529,8 +435,7 @@ Partial Class FormPelunasanHutang
         'Label13
         '
         Me.Label13.BackColor = System.Drawing.Color.Transparent
-        Me.Label13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label13.Location = New System.Drawing.Point(325, 81)
+        Me.Label13.Location = New System.Drawing.Point(317, 49)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(87, 20)
         Me.Label13.TabIndex = 138
@@ -547,7 +452,7 @@ Partial Class FormPelunasanHutang
         Me.txtSisaHutang.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtSisaHutang.DecimalValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.txtSisaHutang.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSisaHutang.Location = New System.Drawing.Point(439, 81)
+        Me.txtSisaHutang.Location = New System.Drawing.Point(431, 49)
         Me.txtSisaHutang.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.txtSisaHutang.Name = "txtSisaHutang"
         Me.txtSisaHutang.NullString = ""
@@ -563,7 +468,7 @@ Partial Class FormPelunasanHutang
         '
         Me.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox6.Location = New System.Drawing.Point(417, 81)
+        Me.TextBox6.Location = New System.Drawing.Point(409, 49)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.ReadOnly = True
         Me.TextBox6.Size = New System.Drawing.Size(34, 20)
@@ -572,11 +477,11 @@ Partial Class FormPelunasanHutang
         '
         'Label11
         '
+        Me.Label11.AutoSize = True
         Me.Label11.BackColor = System.Drawing.Color.Transparent
-        Me.Label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label11.Location = New System.Drawing.Point(12, 125)
+        Me.Label11.Location = New System.Drawing.Point(4, 93)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(87, 20)
+        Me.Label11.Size = New System.Drawing.Size(67, 13)
         Me.Label11.TabIndex = 135
         Me.Label11.Text = "Total Angsur"
         '
@@ -591,7 +496,7 @@ Partial Class FormPelunasanHutang
         Me.txtAngsur.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtAngsur.DecimalValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.txtAngsur.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAngsur.Location = New System.Drawing.Point(126, 125)
+        Me.txtAngsur.Location = New System.Drawing.Point(119, 93)
         Me.txtAngsur.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.txtAngsur.Name = "txtAngsur"
         Me.txtAngsur.NullString = ""
@@ -607,7 +512,7 @@ Partial Class FormPelunasanHutang
         '
         Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(104, 125)
+        Me.TextBox4.Location = New System.Drawing.Point(97, 93)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.ReadOnly = True
         Me.TextBox4.Size = New System.Drawing.Size(34, 20)
@@ -616,11 +521,11 @@ Partial Class FormPelunasanHutang
         '
         'Label10
         '
+        Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.Transparent
-        Me.Label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label10.Location = New System.Drawing.Point(12, 103)
+        Me.Label10.Location = New System.Drawing.Point(4, 71)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(87, 20)
+        Me.Label10.Size = New System.Drawing.Size(60, 13)
         Me.Label10.TabIndex = 132
         Me.Label10.Text = "Total Retur"
         '
@@ -635,7 +540,7 @@ Partial Class FormPelunasanHutang
         Me.txtRetur.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtRetur.DecimalValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.txtRetur.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtRetur.Location = New System.Drawing.Point(126, 103)
+        Me.txtRetur.Location = New System.Drawing.Point(119, 71)
         Me.txtRetur.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.txtRetur.Name = "txtRetur"
         Me.txtRetur.NullString = ""
@@ -651,25 +556,25 @@ Partial Class FormPelunasanHutang
         '
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(104, 103)
+        Me.TextBox1.Location = New System.Drawing.Point(97, 71)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(34, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(23, 20)
         Me.TextBox1.TabIndex = 131
         Me.TextBox1.Text = "Rp."
         '
         'DTPTanggalFaktur
         '
         Me.DTPTanggalFaktur.Enabled = False
-        Me.DTPTanggalFaktur.Location = New System.Drawing.Point(104, 59)
+        Me.DTPTanggalFaktur.Location = New System.Drawing.Point(409, 27)
         Me.DTPTanggalFaktur.Name = "DTPTanggalFaktur"
         Me.DTPTanggalFaktur.Size = New System.Drawing.Size(215, 20)
         Me.DTPTanggalFaktur.TabIndex = 129
         '
         'Label9
         '
-        Me.Label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label9.Location = New System.Drawing.Point(12, 59)
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
+        Me.Label9.Location = New System.Drawing.Point(317, 27)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(87, 20)
         Me.Label9.TabIndex = 128
@@ -679,7 +584,7 @@ Partial Class FormPelunasanHutang
         '
         Me.txtNoFaktur.BackColor = System.Drawing.SystemColors.Control
         Me.txtNoFaktur.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtNoFaktur.Location = New System.Drawing.Point(104, 37)
+        Me.txtNoFaktur.Location = New System.Drawing.Point(97, 27)
         Me.txtNoFaktur.Name = "txtNoFaktur"
         Me.txtNoFaktur.ReadOnly = True
         Me.txtNoFaktur.Size = New System.Drawing.Size(215, 20)
@@ -687,10 +592,11 @@ Partial Class FormPelunasanHutang
         '
         'Label4
         '
-        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label4.Location = New System.Drawing.Point(12, 37)
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Location = New System.Drawing.Point(4, 27)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(87, 20)
+        Me.Label4.Size = New System.Drawing.Size(54, 13)
         Me.Label4.TabIndex = 127
         Me.Label4.Text = "No Faktur"
         '
@@ -698,7 +604,7 @@ Partial Class FormPelunasanHutang
         '
         Me.txtNotaBeli.BackColor = System.Drawing.SystemColors.Info
         Me.txtNotaBeli.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtNotaBeli.Location = New System.Drawing.Point(104, 15)
+        Me.txtNotaBeli.Location = New System.Drawing.Point(97, 5)
         Me.txtNotaBeli.Name = "txtNotaBeli"
         Me.txtNotaBeli.ReadOnly = True
         Me.txtNotaBeli.Size = New System.Drawing.Size(215, 20)
@@ -706,20 +612,21 @@ Partial Class FormPelunasanHutang
         '
         'Label5
         '
-        Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label5.Location = New System.Drawing.Point(12, 15)
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Location = New System.Drawing.Point(4, 5)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(87, 20)
+        Me.Label5.Size = New System.Drawing.Size(65, 13)
         Me.Label5.TabIndex = 125
         Me.Label5.Text = "Nota Beli [>]"
         '
         'Label18
         '
+        Me.Label18.AutoSize = True
         Me.Label18.BackColor = System.Drawing.Color.Transparent
-        Me.Label18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label18.Location = New System.Drawing.Point(12, 81)
+        Me.Label18.Location = New System.Drawing.Point(4, 49)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(87, 20)
+        Me.Label18.Size = New System.Drawing.Size(69, 13)
         Me.Label18.TabIndex = 104
         Me.Label18.Text = "Total Hutang"
         '
@@ -734,7 +641,7 @@ Partial Class FormPelunasanHutang
         Me.txtHutang.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtHutang.DecimalValue = New Decimal(New Integer() {0, 0, 0, 131072})
         Me.txtHutang.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtHutang.Location = New System.Drawing.Point(126, 81)
+        Me.txtHutang.Location = New System.Drawing.Point(119, 49)
         Me.txtHutang.Metrocolor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.txtHutang.Name = "txtHutang"
         Me.txtHutang.NullString = ""
@@ -750,56 +657,56 @@ Partial Class FormPelunasanHutang
         '
         Me.TextBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox10.Location = New System.Drawing.Point(104, 81)
+        Me.TextBox10.Location = New System.Drawing.Point(97, 49)
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.ReadOnly = True
-        Me.TextBox10.Size = New System.Drawing.Size(34, 20)
+        Me.TextBox10.Size = New System.Drawing.Size(23, 20)
         Me.TextBox10.TabIndex = 102
         Me.TextBox10.Text = "Rp."
         '
         'gridPelunasan
         '
+        Me.gridPelunasan.AllowUserToAddRows = False
+        Me.gridPelunasan.AllowUserToDeleteRows = False
         Me.gridPelunasan.ColumnHeadersHeight = 35
         Me.gridPelunasan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.gridPelunasan.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.gridPelunasan.Location = New System.Drawing.Point(0, 269)
+        Me.gridPelunasan.Location = New System.Drawing.Point(4, 3)
         Me.gridPelunasan.Name = "gridPelunasan"
-        Me.gridPelunasan.RowHeadersWidth = 60
+        Me.gridPelunasan.RowHeadersWidth = 5
         Me.gridPelunasan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
-        Me.gridPelunasan.Size = New System.Drawing.Size(899, 216)
+        Me.gridPelunasan.Size = New System.Drawing.Size(901, 257)
         Me.gridPelunasan.TabIndex = 39
         '
         'PanelSupplier
         '
         Me.PanelSupplier.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.PanelSupplier.BackgroundImage = Global.SI_Pelunasan_Hutang_Farmasi.My.Resources.Resources.BackgroundForm
+        Me.PanelSupplier.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PanelSupplier.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PanelSupplier.Controls.Add(Me.GroupBox12)
-        Me.PanelSupplier.Controls.Add(Me.GroupBox11)
-        Me.PanelSupplier.Location = New System.Drawing.Point(104, 243)
+        Me.PanelSupplier.Controls.Add(Me.gridSupplier)
+        Me.PanelSupplier.Controls.Add(Me.Label33)
+        Me.PanelSupplier.Controls.Add(Me.txtCariSupplier)
+        Me.PanelSupplier.Controls.Add(Me.Button5)
+        Me.PanelSupplier.Location = New System.Drawing.Point(946, 9)
         Me.PanelSupplier.Name = "PanelSupplier"
-        Me.PanelSupplier.Size = New System.Drawing.Size(674, 321)
+        Me.PanelSupplier.Size = New System.Drawing.Size(392, 242)
         Me.PanelSupplier.TabIndex = 40
         Me.PanelSupplier.Visible = False
         '
-        'GroupBox12
-        '
-        Me.GroupBox12.Controls.Add(Me.gridSupplier)
-        Me.GroupBox12.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupBox12.Location = New System.Drawing.Point(0, 54)
-        Me.GroupBox12.Name = "GroupBox12"
-        Me.GroupBox12.Size = New System.Drawing.Size(672, 265)
-        Me.GroupBox12.TabIndex = 1
-        Me.GroupBox12.TabStop = False
-        '
         'gridSupplier
         '
+        Me.gridSupplier.AllowUserToAddRows = False
+        Me.gridSupplier.AllowUserToDeleteRows = False
+        Me.gridSupplier.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.gridSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.gridSupplier.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column2})
-        Me.gridSupplier.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.gridSupplier.Location = New System.Drawing.Point(3, 16)
+        Me.gridSupplier.Location = New System.Drawing.Point(4, 43)
         Me.gridSupplier.Name = "gridSupplier"
+        Me.gridSupplier.RowHeadersWidth = 5
         Me.gridSupplier.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.gridSupplier.Size = New System.Drawing.Size(666, 246)
+        Me.gridSupplier.Size = New System.Drawing.Size(384, 194)
         Me.gridSupplier.TabIndex = 0
         '
         'Column2
@@ -807,23 +714,13 @@ Partial Class FormPelunasanHutang
         Me.Column2.HeaderText = "Pilih"
         Me.Column2.Image = CType(resources.GetObject("Column2.Image"), System.Drawing.Image)
         Me.Column2.Name = "Column2"
-        '
-        'GroupBox11
-        '
-        Me.GroupBox11.Controls.Add(Me.Label33)
-        Me.GroupBox11.Controls.Add(Me.txtCariSupplier)
-        Me.GroupBox11.Controls.Add(Me.Button5)
-        Me.GroupBox11.Dock = System.Windows.Forms.DockStyle.Top
-        Me.GroupBox11.Location = New System.Drawing.Point(0, 0)
-        Me.GroupBox11.Name = "GroupBox11"
-        Me.GroupBox11.Size = New System.Drawing.Size(672, 54)
-        Me.GroupBox11.TabIndex = 0
-        Me.GroupBox11.TabStop = False
+        Me.Column2.Width = 50
         '
         'Label33
         '
         Me.Label33.AutoSize = True
-        Me.Label33.Location = New System.Drawing.Point(49, 23)
+        Me.Label33.BackColor = System.Drawing.Color.Transparent
+        Me.Label33.Location = New System.Drawing.Point(49, 13)
         Me.Label33.Name = "Label33"
         Me.Label33.Size = New System.Drawing.Size(66, 13)
         Me.Label33.TabIndex = 12
@@ -831,17 +728,18 @@ Partial Class FormPelunasanHutang
         '
         'txtCariSupplier
         '
+        Me.txtCariSupplier.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtCariSupplier.BackColor = System.Drawing.SystemColors.Info
-        Me.txtCariSupplier.Location = New System.Drawing.Point(137, 21)
+        Me.txtCariSupplier.Location = New System.Drawing.Point(137, 11)
         Me.txtCariSupplier.Name = "txtCariSupplier"
-        Me.txtCariSupplier.Size = New System.Drawing.Size(509, 20)
+        Me.txtCariSupplier.Size = New System.Drawing.Size(250, 20)
         Me.txtCariSupplier.TabIndex = 10
         '
         'Button5
         '
-        Me.Button5.Dock = System.Windows.Forms.DockStyle.Left
         Me.Button5.Image = CType(resources.GetObject("Button5.Image"), System.Drawing.Image)
-        Me.Button5.Location = New System.Drawing.Point(3, 16)
+        Me.Button5.Location = New System.Drawing.Point(1, 3)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(39, 35)
         Me.Button5.TabIndex = 7
@@ -850,34 +748,33 @@ Partial Class FormPelunasanHutang
         'PanelNotaBeli
         '
         Me.PanelNotaBeli.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.PanelNotaBeli.BackgroundImage = Global.SI_Pelunasan_Hutang_Farmasi.My.Resources.Resources.BackgroundForm
+        Me.PanelNotaBeli.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PanelNotaBeli.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PanelNotaBeli.Controls.Add(Me.GroupBox3)
-        Me.PanelNotaBeli.Controls.Add(Me.GroupBox8)
-        Me.PanelNotaBeli.Location = New System.Drawing.Point(101, 195)
+        Me.PanelNotaBeli.Controls.Add(Me.gridNotaBeli)
+        Me.PanelNotaBeli.Controls.Add(Me.Label16)
+        Me.PanelNotaBeli.Controls.Add(Me.txtCariFaktur)
+        Me.PanelNotaBeli.Controls.Add(Me.Button2)
+        Me.PanelNotaBeli.Location = New System.Drawing.Point(946, 257)
         Me.PanelNotaBeli.Name = "PanelNotaBeli"
-        Me.PanelNotaBeli.Size = New System.Drawing.Size(733, 338)
+        Me.PanelNotaBeli.Size = New System.Drawing.Size(392, 314)
         Me.PanelNotaBeli.TabIndex = 177
         Me.PanelNotaBeli.Visible = False
         '
-        'GroupBox3
-        '
-        Me.GroupBox3.Controls.Add(Me.gridNotaBeli)
-        Me.GroupBox3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupBox3.Location = New System.Drawing.Point(0, 54)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(731, 282)
-        Me.GroupBox3.TabIndex = 1
-        Me.GroupBox3.TabStop = False
-        '
         'gridNotaBeli
         '
+        Me.gridNotaBeli.AllowUserToAddRows = False
+        Me.gridNotaBeli.AllowUserToDeleteRows = False
+        Me.gridNotaBeli.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.gridNotaBeli.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.gridNotaBeli.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewImageColumn2})
-        Me.gridNotaBeli.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.gridNotaBeli.Location = New System.Drawing.Point(3, 16)
+        Me.gridNotaBeli.Location = New System.Drawing.Point(4, 44)
         Me.gridNotaBeli.Name = "gridNotaBeli"
+        Me.gridNotaBeli.RowHeadersWidth = 5
         Me.gridNotaBeli.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.gridNotaBeli.Size = New System.Drawing.Size(725, 263)
+        Me.gridNotaBeli.Size = New System.Drawing.Size(383, 263)
         Me.gridNotaBeli.TabIndex = 1
         '
         'DataGridViewImageColumn2
@@ -885,23 +782,13 @@ Partial Class FormPelunasanHutang
         Me.DataGridViewImageColumn2.HeaderText = "Pilih"
         Me.DataGridViewImageColumn2.Image = CType(resources.GetObject("DataGridViewImageColumn2.Image"), System.Drawing.Image)
         Me.DataGridViewImageColumn2.Name = "DataGridViewImageColumn2"
-        '
-        'GroupBox8
-        '
-        Me.GroupBox8.Controls.Add(Me.Label16)
-        Me.GroupBox8.Controls.Add(Me.txtCariFaktur)
-        Me.GroupBox8.Controls.Add(Me.Button2)
-        Me.GroupBox8.Dock = System.Windows.Forms.DockStyle.Top
-        Me.GroupBox8.Location = New System.Drawing.Point(0, 0)
-        Me.GroupBox8.Name = "GroupBox8"
-        Me.GroupBox8.Size = New System.Drawing.Size(731, 54)
-        Me.GroupBox8.TabIndex = 0
-        Me.GroupBox8.TabStop = False
+        Me.DataGridViewImageColumn2.Width = 50
         '
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(59, 23)
+        Me.Label16.BackColor = System.Drawing.Color.Transparent
+        Me.Label16.Location = New System.Drawing.Point(56, 12)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(58, 13)
         Me.Label16.TabIndex = 12
@@ -909,48 +796,134 @@ Partial Class FormPelunasanHutang
         '
         'txtCariFaktur
         '
+        Me.txtCariFaktur.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtCariFaktur.BackColor = System.Drawing.SystemColors.Info
-        Me.txtCariFaktur.Location = New System.Drawing.Point(127, 21)
+        Me.txtCariFaktur.Location = New System.Drawing.Point(124, 10)
         Me.txtCariFaktur.Name = "txtCariFaktur"
-        Me.txtCariFaktur.Size = New System.Drawing.Size(572, 20)
+        Me.txtCariFaktur.Size = New System.Drawing.Size(263, 20)
         Me.txtCariFaktur.TabIndex = 10
         '
         'Button2
         '
-        Me.Button2.Dock = System.Windows.Forms.DockStyle.Left
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
-        Me.Button2.Location = New System.Drawing.Point(3, 16)
+        Me.Button2.Location = New System.Drawing.Point(4, 3)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(39, 35)
         Me.Button2.TabIndex = 7
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'GBHeader
+        '
+        Me.GBHeader.BackgroundImage = Global.SI_Pelunasan_Hutang_Farmasi.My.Resources.Resources.BackgroundForm
+        Me.GBHeader.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.GBHeader.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.GBHeader.Controls.Add(Me.Label14)
+        Me.GBHeader.Controls.Add(Me.Label1)
+        Me.GBHeader.Controls.Add(Me.txtKodeSupplier)
+        Me.GBHeader.Controls.Add(Me.DTPTanggalTrans)
+        Me.GBHeader.Controls.Add(Me.txtSupplier)
+        Me.GBHeader.Controls.Add(Me.txtSPM)
+        Me.GBHeader.Controls.Add(Me.Label3)
+        Me.GBHeader.Controls.Add(Me.Label2)
+        Me.GBHeader.Controls.Add(Me.txtKeterangan)
+        Me.GBHeader.Controls.Add(Me.Label7)
+        Me.GBHeader.Location = New System.Drawing.Point(6, 6)
+        Me.GBHeader.Name = "GBHeader"
+        Me.GBHeader.Size = New System.Drawing.Size(911, 97)
+        Me.GBHeader.TabIndex = 178
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox4.BackgroundImage = Global.SI_Pelunasan_Hutang_Farmasi.My.Resources.Resources.BackgroundForm
+        Me.GroupBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.GroupBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.GroupBox4.Controls.Add(Me.Label15)
+        Me.GroupBox4.Controls.Add(Me.Label5)
+        Me.GroupBox4.Controls.Add(Me.txtA2)
+        Me.GroupBox4.Controls.Add(Me.TextBox10)
+        Me.GroupBox4.Controls.Add(Me.btnAdd)
+        Me.GroupBox4.Controls.Add(Me.txtHutang)
+        Me.GroupBox4.Controls.Add(Me.Label12)
+        Me.GroupBox4.Controls.Add(Me.Label18)
+        Me.GroupBox4.Controls.Add(Me.txtJumlahBayar)
+        Me.GroupBox4.Controls.Add(Me.txtNotaBeli)
+        Me.GroupBox4.Controls.Add(Me.TextBox5)
+        Me.GroupBox4.Controls.Add(Me.Label4)
+        Me.GroupBox4.Controls.Add(Me.Label13)
+        Me.GroupBox4.Controls.Add(Me.txtNoFaktur)
+        Me.GroupBox4.Controls.Add(Me.txtSisaHutang)
+        Me.GroupBox4.Controls.Add(Me.Label9)
+        Me.GroupBox4.Controls.Add(Me.TextBox6)
+        Me.GroupBox4.Controls.Add(Me.DTPTanggalFaktur)
+        Me.GroupBox4.Controls.Add(Me.Label11)
+        Me.GroupBox4.Controls.Add(Me.TextBox1)
+        Me.GroupBox4.Controls.Add(Me.txtAngsur)
+        Me.GroupBox4.Controls.Add(Me.txtRetur)
+        Me.GroupBox4.Controls.Add(Me.TextBox4)
+        Me.GroupBox4.Controls.Add(Me.Label10)
+        Me.GroupBox4.Location = New System.Drawing.Point(6, 109)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(911, 121)
+        Me.GroupBox4.TabIndex = 179
+        '
+        'Panel2
+        '
+        Me.Panel2.BackgroundImage = Global.SI_Pelunasan_Hutang_Farmasi.My.Resources.Resources.BackgroundForm
+        Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel2.Controls.Add(Me.cmdHapusBaris)
+        Me.Panel2.Controls.Add(Me.gridPelunasan)
+        Me.Panel2.Controls.Add(Me.txtGrandJumlahHarga)
+        Me.Panel2.Controls.Add(Me.TextBox3)
+        Me.Panel2.Controls.Add(Me.txtQty)
+        Me.Panel2.Controls.Add(Me.TextBox2)
+        Me.Panel2.Controls.Add(Me.Label6)
+        Me.Panel2.Controls.Add(Me.txtGrandJumlahHargaBulat)
+        Me.Panel2.Controls.Add(Me.Label8)
+        Me.Panel2.Location = New System.Drawing.Point(6, 236)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(911, 314)
+        Me.Panel2.TabIndex = 180
+        '
+        'Panel1
+        '
+        Me.Panel1.BackgroundImage = Global.SI_Pelunasan_Hutang_Farmasi.My.Resources.Resources.BackgroundForm
+        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.btnKeluar)
+        Me.Panel1.Controls.Add(Me.btnBaru)
+        Me.Panel1.Controls.Add(Me.btnSimpan)
+        Me.Panel1.Location = New System.Drawing.Point(6, 556)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(911, 41)
+        Me.Panel1.TabIndex = 181
+        '
         'FormPelunasanHutang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(899, 591)
+        Me.BackgroundImage = Global.SI_Pelunasan_Hutang_Farmasi.My.Resources.Resources.BackgroundForm
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(923, 604)
         Me.Controls.Add(Me.PanelNotaBeli)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PanelSupplier)
-        Me.Controls.Add(Me.gridPelunasan)
+        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.GroupBox4)
-        Me.Controls.Add(Me.GroupBox5)
         Me.Controls.Add(Me.GBHeader)
+        Me.DoubleBuffered = True
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
         Me.Name = "FormPelunasanHutang"
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Pelunasan Hutang Pembelian Barang Medis Kepada Supplier"
-        Me.GBHeader.ResumeLayout(False)
-        Me.GBHeader.PerformLayout()
-        Me.GroupBox5.ResumeLayout(False)
-        Me.GroupBox5.PerformLayout()
         CType(Me.txtGrandJumlahHargaBulat, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtGrandJumlahHarga, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtQty, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox7.ResumeLayout(False)
-        Me.GroupBox4.ResumeLayout(False)
-        Me.GroupBox4.PerformLayout()
         CType(Me.txtJumlahBayar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtSisaHutang, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtAngsur, System.ComponentModel.ISupportInitialize).EndInit()
@@ -958,27 +931,28 @@ Partial Class FormPelunasanHutang
         CType(Me.txtHutang, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.gridPelunasan, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelSupplier.ResumeLayout(False)
-        Me.GroupBox12.ResumeLayout(False)
+        Me.PanelSupplier.PerformLayout()
         CType(Me.gridSupplier, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox11.ResumeLayout(False)
-        Me.GroupBox11.PerformLayout()
         Me.PanelNotaBeli.ResumeLayout(False)
-        Me.GroupBox3.ResumeLayout(False)
+        Me.PanelNotaBeli.PerformLayout()
         CType(Me.gridNotaBeli, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox8.ResumeLayout(False)
-        Me.GroupBox8.PerformLayout()
+        Me.GBHeader.ResumeLayout(False)
+        Me.GBHeader.PerformLayout()
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents GBHeader As System.Windows.Forms.GroupBox
     Friend WithEvents txtKeterangan As System.Windows.Forms.TextBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents txtSPM As System.Windows.Forms.TextBox
     Friend WithEvents DTPTanggalTrans As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents GroupBox5 As System.Windows.Forms.GroupBox
-    Friend WithEvents ButtonAdv2 As Syncfusion.Windows.Forms.ButtonAdv
+    Friend WithEvents cmdHapusBaris As Syncfusion.Windows.Forms.ButtonAdv
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents txtGrandJumlahHargaBulat As Syncfusion.Windows.Forms.Tools.CurrencyTextBox
@@ -986,11 +960,9 @@ Partial Class FormPelunasanHutang
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents txtGrandJumlahHarga As Syncfusion.Windows.Forms.Tools.CurrencyTextBox
     Friend WithEvents txtQty As Syncfusion.Windows.Forms.Tools.CurrencyTextBox
-    Friend WithEvents GroupBox7 As System.Windows.Forms.GroupBox
     Friend WithEvents btnKeluar As Syncfusion.Windows.Forms.ButtonAdv
     Friend WithEvents btnBaru As Syncfusion.Windows.Forms.ButtonAdv
     Friend WithEvents btnSimpan As Syncfusion.Windows.Forms.ButtonAdv
-    Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
     Friend WithEvents Label18 As System.Windows.Forms.Label
     Friend WithEvents txtHutang As Syncfusion.Windows.Forms.Tools.CurrencyTextBox
     Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
@@ -1018,23 +990,22 @@ Partial Class FormPelunasanHutang
     Friend WithEvents gridPelunasan As System.Windows.Forms.DataGridView
     Friend WithEvents btnAdd As Syncfusion.Windows.Forms.ButtonAdv
     Friend WithEvents PanelSupplier As System.Windows.Forms.Panel
-    Friend WithEvents GroupBox12 As System.Windows.Forms.GroupBox
-    Friend WithEvents gridSupplier As System.Windows.Forms.DataGridView
-    Friend WithEvents Column2 As System.Windows.Forms.DataGridViewImageColumn
-    Friend WithEvents GroupBox11 As System.Windows.Forms.GroupBox
     Friend WithEvents Label33 As System.Windows.Forms.Label
     Friend WithEvents txtCariSupplier As System.Windows.Forms.TextBox
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents PanelNotaBeli As System.Windows.Forms.Panel
-    Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
     Friend WithEvents gridNotaBeli As System.Windows.Forms.DataGridView
-    Friend WithEvents DataGridViewImageColumn2 As System.Windows.Forms.DataGridViewImageColumn
-    Friend WithEvents GroupBox8 As System.Windows.Forms.GroupBox
     Friend WithEvents Label16 As System.Windows.Forms.Label
     Friend WithEvents txtCariFaktur As System.Windows.Forms.TextBox
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Label15 As System.Windows.Forms.Label
     Friend WithEvents txtA2 As System.Windows.Forms.TextBox
-
+    Friend WithEvents DataGridViewImageColumn2 As DataGridViewImageColumn
+    Friend WithEvents gridSupplier As DataGridView
+    Friend WithEvents Column2 As DataGridViewImageColumn
+    Friend WithEvents GBHeader As Panel
+    Friend WithEvents GroupBox4 As Panel
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Panel1 As Panel
 End Class

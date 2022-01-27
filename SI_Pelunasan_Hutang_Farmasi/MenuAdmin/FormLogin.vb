@@ -2,7 +2,6 @@
 Imports System.Data.SqlClient
 
 Public Class FormLogin
-    Inherits MetroForm
 
     Function PrevInstance() As Boolean
         If UBound(Diagnostics.Process.GetProcessesByName(Diagnostics.Process.GetCurrentProcess.ProcessName)) > 0 Then
@@ -46,6 +45,8 @@ Public Class FormLogin
             End If
         End If
         Call konek()
+        txtUserID.Text = "00000001"
+        txtPassword.Text = "2222"
     End Sub
 
     Private Sub TextBoxExt1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtUserID.KeyPress
@@ -114,6 +115,10 @@ Public Class FormLogin
             MenuUtama.PictureBox1.Image = PictureBox1.Image
             LabelNama.Text = Trim(DR.Item("nmkasir"))
             LabelKode.Text = Trim(DR.Item("kdkasir"))
+
+            sesiAplikasi.sesiUID = Trim(DR.Item("kdkasir"))
+            sesiAplikasi.sesiNamaUser = Trim(DR.Item("nmkasir"))
+
             MenuUtama.PanelKode.Text = txtUserID.Text
             MenuUtama.PanelNama.Text = lblNama.Text
             MenuUtama.login.Enabled = False

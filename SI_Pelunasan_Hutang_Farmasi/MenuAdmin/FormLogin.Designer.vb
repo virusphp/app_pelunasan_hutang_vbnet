@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormLogin
-    Inherits Syncfusion.Windows.Forms.MetroForm
+    Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FormLogin
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormLogin))
@@ -53,8 +53,9 @@ Partial Class FormLogin
         'lblNip
         '
         Me.lblNip.AutoSize = True
+        Me.lblNip.BackColor = System.Drawing.Color.Transparent
         Me.lblNip.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNip.Location = New System.Drawing.Point(357, 108)
+        Me.lblNip.Location = New System.Drawing.Point(324, 108)
         Me.lblNip.Name = "lblNip"
         Me.lblNip.Size = New System.Drawing.Size(11, 13)
         Me.lblNip.TabIndex = 52
@@ -63,22 +64,22 @@ Partial Class FormLogin
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(11, 238)
+        Me.Label4.Location = New System.Drawing.Point(11, 223)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(134, 12)
         Me.Label4.TabIndex = 51
-        Me.Label4.Text = "Copyright © 2017 RSUD Kraton"
+        Me.Label4.Text = "Copyright © 2022 RSUD Kraton"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lblDeveloper
         '
         Me.lblDeveloper.AutoSize = True
-        Me.lblDeveloper.Location = New System.Drawing.Point(10, 221)
+        Me.lblDeveloper.Location = New System.Drawing.Point(143, 211)
         Me.lblDeveloper.Name = "lblDeveloper"
-        Me.lblDeveloper.Size = New System.Drawing.Size(112, 13)
+        Me.lblDeveloper.Size = New System.Drawing.Size(0, 13)
         Me.lblDeveloper.TabIndex = 50
-        Me.lblDeveloper.Text = "Smart Solution System"
         Me.lblDeveloper.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label2
@@ -94,6 +95,7 @@ Partial Class FormLogin
         '
         'Panel3
         '
+        Me.Panel3.BackColor = System.Drawing.Color.Transparent
         Me.Panel3.BackgroundImage = CType(resources.GetObject("Panel3.BackgroundImage"), System.Drawing.Image)
         Me.Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel3.Location = New System.Drawing.Point(12, 12)
@@ -104,8 +106,9 @@ Partial Class FormLogin
         'lblNama
         '
         Me.lblNama.AutoSize = True
+        Me.lblNama.BackColor = System.Drawing.Color.Transparent
         Me.lblNama.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNama.Location = New System.Drawing.Point(357, 89)
+        Me.lblNama.Location = New System.Drawing.Point(324, 89)
         Me.lblNama.Name = "lblNama"
         Me.lblNama.Size = New System.Drawing.Size(13, 16)
         Me.lblNama.TabIndex = 47
@@ -113,6 +116,7 @@ Partial Class FormLogin
         '
         'Panel2
         '
+        Me.Panel2.BackColor = System.Drawing.Color.Transparent
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel2.Controls.Add(Me.AutoLabel1)
         Me.Panel2.Controls.Add(Me.txtUserID)
@@ -120,7 +124,7 @@ Partial Class FormLogin
         Me.Panel2.Controls.Add(Me.ButtonAdv1)
         Me.Panel2.Controls.Add(Me.AutoLabel3)
         Me.Panel2.Controls.Add(Me.ButtonAdv2)
-        Me.Panel2.Location = New System.Drawing.Point(237, 147)
+        Me.Panel2.Location = New System.Drawing.Point(204, 147)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(317, 114)
         Me.Panel2.TabIndex = 46
@@ -190,7 +194,7 @@ Partial Class FormLogin
         '
         'PictureBox2
         '
-        Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox2.Name = "PictureBox2"
@@ -235,7 +239,7 @@ Partial Class FormLogin
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.LabelNama)
         Me.Panel1.Controls.Add(Me.LabelKode)
-        Me.Panel1.Location = New System.Drawing.Point(237, 12)
+        Me.Panel1.Location = New System.Drawing.Point(205, 12)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(114, 129)
         Me.Panel1.TabIndex = 44
@@ -244,7 +248,9 @@ Partial Class FormLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(563, 270)
+        Me.BackgroundImage = Global.SI_Pelunasan_Hutang_Farmasi.My.Resources.Resources.BackgroundForm
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(528, 269)
         Me.Controls.Add(Me.lblNip)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.lblDeveloper)
@@ -253,6 +259,10 @@ Partial Class FormLogin
         Me.Controls.Add(Me.lblNama)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
+        Me.DoubleBuffered = True
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FormLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"

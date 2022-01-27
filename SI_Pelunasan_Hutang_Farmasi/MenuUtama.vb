@@ -45,16 +45,25 @@ Public Class MenuUtama
             lblNamaUltah.Text = ""
             lblTglUltah.Text = ""
         End If
+        MenuUtama_Resize(sender, e)
         btnLogout.Enabled = False
     End Sub
 
     Private Sub MenuUtama_Resize(sender As Object, e As EventArgs) Handles Me.Resize
-        PictureBox1.Left = Me.Width - PictureBox1.Width - 40
+        'PictureBox1.Left = Me.Width - PictureBox1.Width - 40
+        'PictureBox2.Left = PictureBox1.Left - PictureBox2.Width - 5
+        'lblNamaUltah.Left = PictureBox2.Left - lblNamaUltah.Width - 7
+        'lblTglUltah.Left = PictureBox2.Left - lblTglUltah.Width - 7
+        'lblTitle.Left = PictureBox2.Left - lblTitle.Width - 7
+        'lblDepo.Left = PictureBox2.Left - lblDepo.Width - 7
+
+        PictureBox1.Left = Me.Width - PictureBox1.Width - 20
         PictureBox2.Left = PictureBox1.Left - PictureBox2.Width - 5
-        lblNamaUltah.Left = PictureBox2.Left - lblNamaUltah.Width - 7
-        lblTglUltah.Left = PictureBox2.Left - lblTglUltah.Width - 7
-        lblTitle.Left = PictureBox2.Left - lblTitle.Width - 7
-        lblDepo.Left = PictureBox2.Left - lblDepo.Width - 7
+
+        lblNamaUltah.Left = PictureBox2.Left - lblNamaUltah.Width - 10
+        lblTglUltah.Left = PictureBox2.Left - lblTglUltah.Width - 10
+        lblTitle.Left = PictureBox2.Left - lblTitle.Width - 10
+        lblDepo.Left = PictureBox2.Left - lblDepo.Width - 10
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -139,6 +148,10 @@ Public Class MenuUtama
 
     Private Sub ToolStripButton8_Click(sender As Object, e As EventArgs) Handles ToolStripButton8.Click
         FormLaporanTandaTerima.ShowDialog()
+    End Sub
+
+    Private Sub lblTglUltah_Click(sender As Object, e As EventArgs) Handles lblTglUltah.Click
+        MenuUtama_Resize(sender, e)
     End Sub
 End Class
 

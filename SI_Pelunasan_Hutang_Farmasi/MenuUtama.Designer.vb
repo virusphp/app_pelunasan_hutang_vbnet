@@ -59,6 +59,8 @@ Partial Class MenuUtama
         Me.ToolStripPanelItem1 = New Syncfusion.Windows.Forms.Tools.ToolStripPanelItem()
         Me.ToolStripButton6 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton7 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripEx6 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        Me.ToolStripButton8 = New System.Windows.Forms.ToolStripButton()
         Me.MenuKoneksi = New Syncfusion.Windows.Forms.Tools.ToolStripTabItem()
         Me.ToolStripEx2 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
@@ -76,8 +78,7 @@ Partial Class MenuUtama
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
-        Me.ToolStripEx6 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
-        Me.ToolStripButton8 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton10 = New System.Windows.Forms.ToolStripButton()
         CType(Me.RibbonControlAdv1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RibbonControlAdv2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.RibbonControlAdv2.SuspendLayout()
@@ -87,6 +88,7 @@ Partial Class MenuUtama
         Me.MenuLunas.Panel.SuspendLayout()
         Me.ToolStripEx4.SuspendLayout()
         Me.ToolStripEx5.SuspendLayout()
+        Me.ToolStripEx6.SuspendLayout()
         Me.MenuKoneksi.Panel.SuspendLayout()
         Me.ToolStripEx2.SuspendLayout()
         CType(Me.StatusBarExt1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -98,7 +100,6 @@ Partial Class MenuUtama
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.ToolStripEx6.SuspendLayout()
         Me.SuspendLayout()
         '
         'RibbonControlAdv1
@@ -344,10 +345,10 @@ Partial Class MenuUtama
         Me.RibbonControlAdv2.OfficeMenu.Size = New System.Drawing.Size(12, 65)
         Me.RibbonControlAdv2.QuickPanelImageLayout = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.RibbonControlAdv2.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None
-        Me.RibbonControlAdv2.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.TouchStyle
-        Me.RibbonControlAdv2.SelectedTab = Me.ToolStripTabItem1
+        Me.RibbonControlAdv2.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2010
+        Me.RibbonControlAdv2.SelectedTab = Me.MenuLunas
         Me.RibbonControlAdv2.ShowRibbonDisplayOptionButton = True
-        Me.RibbonControlAdv2.Size = New System.Drawing.Size(1023, 141)
+        Me.RibbonControlAdv2.Size = New System.Drawing.Size(1019, 141)
         Me.RibbonControlAdv2.SystemText.QuickAccessDialogDropDownName = "Start menu"
         Me.RibbonControlAdv2.TabIndex = 0
         Me.RibbonControlAdv2.Text = "RibbonControlAdv2"
@@ -366,13 +367,12 @@ Partial Class MenuUtama
         Me.ToolStripTabItem1.Panel.TabIndex = 2
         Me.ToolStripTabItem1.Panel.Text = "System"
         Me.ToolStripTabItem1.Position = 0
-        Me.ToolStripTabItem1.Size = New System.Drawing.Size(63, 29)
+        Me.ToolStripTabItem1.Size = New System.Drawing.Size(62, 25)
         Me.ToolStripTabItem1.Tag = "1"
         Me.ToolStripTabItem1.Text = "System"
         '
         'ToolStripEx1
         '
-        Me.ToolStripEx1.AutoSize = False
         Me.ToolStripEx1.Dock = System.Windows.Forms.DockStyle.None
         Me.ToolStripEx1.Font = New System.Drawing.Font("Segoe UI", 8.25!)
         Me.ToolStripEx1.ForeColor = System.Drawing.Color.MidnightBlue
@@ -382,57 +382,61 @@ Partial Class MenuUtama
         Me.ToolStripEx1.Location = New System.Drawing.Point(0, 1)
         Me.ToolStripEx1.Name = "ToolStripEx1"
         Me.ToolStripEx1.Office12Mode = False
-        Me.ToolStripEx1.Size = New System.Drawing.Size(120, 86)
+        Me.ToolStripEx1.ShowLauncher = False
+        Me.ToolStripEx1.Size = New System.Drawing.Size(173, 82)
         Me.ToolStripEx1.TabIndex = 0
         '
         'login
         '
+        Me.login.AutoSize = False
         Me.login.Image = CType(resources.GetObject("login.Image"), System.Drawing.Image)
         Me.login.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.login.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.login.Name = "login"
-        Me.login.Size = New System.Drawing.Size(40, 69)
+        Me.login.Size = New System.Drawing.Size(80, 66)
         Me.login.Text = "Login"
         Me.login.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 72)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 69)
         '
         'logout
         '
+        Me.logout.AutoSize = False
         Me.logout.Enabled = False
         Me.logout.Image = CType(resources.GetObject("logout.Image"), System.Drawing.Image)
         Me.logout.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.logout.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.logout.Name = "logout"
-        Me.logout.Size = New System.Drawing.Size(48, 69)
+        Me.logout.Size = New System.Drawing.Size(80, 66)
         Me.logout.Text = "Logout"
         Me.logout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'ToolStripEx3
         '
-        Me.ToolStripEx3.AutoSize = False
         Me.ToolStripEx3.Dock = System.Windows.Forms.DockStyle.None
         Me.ToolStripEx3.Font = New System.Drawing.Font("Segoe UI", 8.25!)
         Me.ToolStripEx3.ForeColor = System.Drawing.Color.MidnightBlue
         Me.ToolStripEx3.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
         Me.ToolStripEx3.Image = Nothing
         Me.ToolStripEx3.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton5})
-        Me.ToolStripEx3.Location = New System.Drawing.Point(122, 1)
+        Me.ToolStripEx3.Location = New System.Drawing.Point(175, 1)
         Me.ToolStripEx3.Name = "ToolStripEx3"
         Me.ToolStripEx3.Office12Mode = False
-        Me.ToolStripEx3.Size = New System.Drawing.Size(61, 86)
+        Me.ToolStripEx3.ShowLauncher = False
+        Me.ToolStripEx3.Size = New System.Drawing.Size(87, 82)
         Me.ToolStripEx3.TabIndex = 2
         '
         'ToolStripButton5
         '
+        Me.ToolStripButton5.AutoSize = False
         Me.ToolStripButton5.Image = CType(resources.GetObject("ToolStripButton5.Image"), System.Drawing.Image)
         Me.ToolStripButton5.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ToolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton5.Name = "ToolStripButton5"
-        Me.ToolStripButton5.Size = New System.Drawing.Size(36, 69)
+        Me.ToolStripButton5.Size = New System.Drawing.Size(80, 66)
         Me.ToolStripButton5.Text = "Exit"
         Me.ToolStripButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
@@ -451,7 +455,7 @@ Partial Class MenuUtama
         Me.MenuLunas.Panel.TabIndex = 3
         Me.MenuLunas.Panel.Text = "Pelunasan Hutang"
         Me.MenuLunas.Position = 1
-        Me.MenuLunas.Size = New System.Drawing.Size(123, 29)
+        Me.MenuLunas.Size = New System.Drawing.Size(122, 25)
         Me.MenuLunas.Tag = "2"
         Me.MenuLunas.Text = "Pelunasan Hutang"
         '
@@ -467,7 +471,8 @@ Partial Class MenuUtama
         Me.ToolStripEx4.Location = New System.Drawing.Point(0, 1)
         Me.ToolStripEx4.Name = "ToolStripEx4"
         Me.ToolStripEx4.Office12Mode = False
-        Me.ToolStripEx4.Size = New System.Drawing.Size(267, 86)
+        Me.ToolStripEx4.ShowLauncher = False
+        Me.ToolStripEx4.Size = New System.Drawing.Size(267, 82)
         Me.ToolStripEx4.TabIndex = 0
         '
         'ToolStripButton2
@@ -476,14 +481,14 @@ Partial Class MenuUtama
         Me.ToolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton2.Name = "ToolStripButton2"
-        Me.ToolStripButton2.Size = New System.Drawing.Size(106, 69)
+        Me.ToolStripButton2.Size = New System.Drawing.Size(106, 66)
         Me.ToolStripButton2.Text = "Pelunasan Hutang"
         Me.ToolStripButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 72)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 69)
         '
         'ToolStripButton3
         '
@@ -491,7 +496,7 @@ Partial Class MenuUtama
         Me.ToolStripButton3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ToolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton3.Name = "ToolStripButton3"
-        Me.ToolStripButton3.Size = New System.Drawing.Size(129, 69)
+        Me.ToolStripButton3.Size = New System.Drawing.Size(129, 66)
         Me.ToolStripButton3.Text = "Edit Pelunasan Hutang"
         Me.ToolStripButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
@@ -507,16 +512,18 @@ Partial Class MenuUtama
         Me.ToolStripEx5.Location = New System.Drawing.Point(269, 1)
         Me.ToolStripEx5.Name = "ToolStripEx5"
         Me.ToolStripEx5.Office12Mode = False
-        Me.ToolStripEx5.Size = New System.Drawing.Size(200, 86)
+        Me.ToolStripEx5.ShowLauncher = False
+        Me.ToolStripEx5.Size = New System.Drawing.Size(213, 82)
         Me.ToolStripEx5.TabIndex = 1
         '
         'ToolStripPanelItem1
         '
+        Me.ToolStripPanelItem1.AutoSize = False
         Me.ToolStripPanelItem1.CausesValidation = False
         Me.ToolStripPanelItem1.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.ToolStripPanelItem1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton6, Me.ToolStripButton7})
+        Me.ToolStripPanelItem1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton6, Me.ToolStripButton7, Me.ToolStripButton10})
         Me.ToolStripPanelItem1.Name = "ToolStripPanelItem1"
-        Me.ToolStripPanelItem1.Size = New System.Drawing.Size(182, 72)
+        Me.ToolStripPanelItem1.Size = New System.Drawing.Size(182, 66)
         Me.ToolStripPanelItem1.Text = "ToolStripPanelItem1"
         Me.ToolStripPanelItem1.Transparent = True
         '
@@ -526,7 +533,7 @@ Partial Class MenuUtama
         Me.ToolStripButton6.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ToolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton6.Name = "ToolStripButton6"
-        Me.ToolStripButton6.Size = New System.Drawing.Size(121, 28)
+        Me.ToolStripButton6.Size = New System.Drawing.Size(113, 20)
         Me.ToolStripButton6.Text = "Laporan Hutang"
         '
         'ToolStripButton7
@@ -535,8 +542,34 @@ Partial Class MenuUtama
         Me.ToolStripButton7.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ToolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton7.Name = "ToolStripButton7"
-        Me.ToolStripButton7.Size = New System.Drawing.Size(178, 28)
+        Me.ToolStripButton7.Size = New System.Drawing.Size(170, 20)
         Me.ToolStripButton7.Text = "Laporan Pelunasan Hutang"
+        '
+        'ToolStripEx6
+        '
+        Me.ToolStripEx6.AutoSize = False
+        Me.ToolStripEx6.Dock = System.Windows.Forms.DockStyle.None
+        Me.ToolStripEx6.Font = New System.Drawing.Font("Segoe UI", 8.25!)
+        Me.ToolStripEx6.ForeColor = System.Drawing.Color.MidnightBlue
+        Me.ToolStripEx6.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
+        Me.ToolStripEx6.Image = Nothing
+        Me.ToolStripEx6.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton8})
+        Me.ToolStripEx6.Location = New System.Drawing.Point(484, 1)
+        Me.ToolStripEx6.Name = "ToolStripEx6"
+        Me.ToolStripEx6.Office12Mode = False
+        Me.ToolStripEx6.ShowLauncher = False
+        Me.ToolStripEx6.Size = New System.Drawing.Size(148, 82)
+        Me.ToolStripEx6.TabIndex = 2
+        '
+        'ToolStripButton8
+        '
+        Me.ToolStripButton8.Image = CType(resources.GetObject("ToolStripButton8.Image"), System.Drawing.Image)
+        Me.ToolStripButton8.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.ToolStripButton8.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton8.Name = "ToolStripButton8"
+        Me.ToolStripButton8.Size = New System.Drawing.Size(123, 66)
+        Me.ToolStripButton8.Text = "Laporan Tanda Terima"
+        Me.ToolStripButton8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'MenuKoneksi
         '
@@ -551,7 +584,7 @@ Partial Class MenuUtama
         Me.MenuKoneksi.Panel.TabIndex = 4
         Me.MenuKoneksi.Panel.Text = "Koneksi"
         Me.MenuKoneksi.Position = 2
-        Me.MenuKoneksi.Size = New System.Drawing.Size(68, 29)
+        Me.MenuKoneksi.Size = New System.Drawing.Size(67, 25)
         Me.MenuKoneksi.Tag = "2"
         Me.MenuKoneksi.Text = "Koneksi"
         '
@@ -567,7 +600,8 @@ Partial Class MenuUtama
         Me.ToolStripEx2.Location = New System.Drawing.Point(0, 1)
         Me.ToolStripEx2.Name = "ToolStripEx2"
         Me.ToolStripEx2.Office12Mode = False
-        Me.ToolStripEx2.Size = New System.Drawing.Size(114, 0)
+        Me.ToolStripEx2.ShowLauncher = False
+        Me.ToolStripEx2.Size = New System.Drawing.Size(114, 82)
         Me.ToolStripEx2.TabIndex = 0
         '
         'ToolStripButton4
@@ -576,14 +610,14 @@ Partial Class MenuUtama
         Me.ToolStripButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton4.Name = "ToolStripButton4"
-        Me.ToolStripButton4.Size = New System.Drawing.Size(85, 0)
+        Me.ToolStripButton4.Size = New System.Drawing.Size(85, 66)
         Me.ToolStripButton4.Text = "Koneksi Server"
         Me.ToolStripButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'StatusBarExt1
         '
         Me.StatusBarExt1.BackColor = System.Drawing.Color.White
-        Me.StatusBarExt1.BeforeTouchSize = New System.Drawing.Size(1019, 29)
+        Me.StatusBarExt1.BeforeTouchSize = New System.Drawing.Size(1007, 29)
         Me.StatusBarExt1.BorderColor = System.Drawing.Color.White
         Me.StatusBarExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.StatusBarExt1.Controls.Add(Me.PanelKode)
@@ -592,10 +626,10 @@ Partial Class MenuUtama
         Me.StatusBarExt1.Controls.Add(Me.PanelJam)
         Me.StatusBarExt1.CustomLayoutBounds = New System.Drawing.Rectangle(0, 0, 0, 0)
         Me.StatusBarExt1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.StatusBarExt1.Location = New System.Drawing.Point(1, 441)
+        Me.StatusBarExt1.Location = New System.Drawing.Point(7, 435)
         Me.StatusBarExt1.Name = "StatusBarExt1"
         Me.StatusBarExt1.Padding = New System.Windows.Forms.Padding(3)
-        Me.StatusBarExt1.Size = New System.Drawing.Size(1019, 29)
+        Me.StatusBarExt1.Size = New System.Drawing.Size(1007, 29)
         Me.StatusBarExt1.Spacing = New System.Drawing.Size(2, 2)
         Me.StatusBarExt1.TabIndex = 1
         Me.StatusBarExt1.ThemesEnabled = True
@@ -619,6 +653,7 @@ Partial Class MenuUtama
         Me.PanelNama.BackColor = System.Drawing.SystemColors.Control
         Me.PanelNama.BeforeTouchSize = New System.Drawing.Size(200, 23)
         Me.PanelNama.Border3DStyle = System.Windows.Forms.Border3DStyle.Bump
+        Me.PanelNama.Icon = CType(resources.GetObject("PanelNama.Icon"), System.Drawing.Icon)
         Me.PanelNama.Location = New System.Drawing.Point(102, 2)
         Me.PanelNama.Margin = New System.Windows.Forms.Padding(0)
         Me.PanelNama.Name = "PanelNama"
@@ -632,6 +667,7 @@ Partial Class MenuUtama
         Me.PanelTanggal.BackColor = System.Drawing.SystemColors.Control
         Me.PanelTanggal.BeforeTouchSize = New System.Drawing.Size(185, 23)
         Me.PanelTanggal.Border3DStyle = System.Windows.Forms.Border3DStyle.Bump
+        Me.PanelTanggal.Icon = CType(resources.GetObject("PanelTanggal.Icon"), System.Drawing.Icon)
         Me.PanelTanggal.Location = New System.Drawing.Point(304, 2)
         Me.PanelTanggal.Margin = New System.Windows.Forms.Padding(0)
         Me.PanelTanggal.Name = "PanelTanggal"
@@ -645,6 +681,7 @@ Partial Class MenuUtama
         Me.PanelJam.BackColor = System.Drawing.SystemColors.Control
         Me.PanelJam.BeforeTouchSize = New System.Drawing.Size(83, 23)
         Me.PanelJam.Border3DStyle = System.Windows.Forms.Border3DStyle.Bump
+        Me.PanelJam.Icon = CType(resources.GetObject("PanelJam.Icon"), System.Drawing.Icon)
         Me.PanelJam.Location = New System.Drawing.Point(491, 2)
         Me.PanelJam.Margin = New System.Windows.Forms.Padding(0)
         Me.PanelJam.Name = "PanelJam"
@@ -655,45 +692,49 @@ Partial Class MenuUtama
         '
         'lblDepo
         '
-        Me.lblDepo.BackColor = System.Drawing.Color.White
-        Me.lblDepo.Font = New System.Drawing.Font("Elephant", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDepo.AutoSize = True
+        Me.lblDepo.BackColor = System.Drawing.Color.Transparent
+        Me.lblDepo.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDepo.ForeColor = System.Drawing.Color.Teal
-        Me.lblDepo.Location = New System.Drawing.Point(568, 62)
+        Me.lblDepo.Location = New System.Drawing.Point(679, 62)
         Me.lblDepo.Name = "lblDepo"
-        Me.lblDepo.Size = New System.Drawing.Size(264, 25)
+        Me.lblDepo.Size = New System.Drawing.Size(162, 23)
         Me.lblDepo.TabIndex = 22
         Me.lblDepo.Text = "BAGIAN KEUANGAN"
         Me.lblDepo.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lblTitle
         '
-        Me.lblTitle.BackColor = System.Drawing.Color.White
+        Me.lblTitle.AutoSize = True
+        Me.lblTitle.BackColor = System.Drawing.Color.Transparent
         Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitle.Location = New System.Drawing.Point(568, 87)
+        Me.lblTitle.Location = New System.Drawing.Point(674, 83)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(264, 15)
+        Me.lblTitle.Size = New System.Drawing.Size(167, 15)
         Me.lblTitle.TabIndex = 21
         Me.lblTitle.Text = "Pegawai Ulang Tahun Hari Ini"
         Me.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lblTglUltah
         '
-        Me.lblTglUltah.BackColor = System.Drawing.Color.White
+        Me.lblTglUltah.AutoSize = True
+        Me.lblTglUltah.BackColor = System.Drawing.Color.Transparent
         Me.lblTglUltah.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTglUltah.Location = New System.Drawing.Point(568, 121)
+        Me.lblTglUltah.Location = New System.Drawing.Point(746, 117)
         Me.lblTglUltah.Name = "lblTglUltah"
-        Me.lblTglUltah.Size = New System.Drawing.Size(264, 20)
+        Me.lblTglUltah.Size = New System.Drawing.Size(95, 13)
         Me.lblTglUltah.TabIndex = 20
         Me.lblTglUltah.Text = "Tempat, Tgl Lahir"
         Me.lblTglUltah.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lblNamaUltah
         '
-        Me.lblNamaUltah.BackColor = System.Drawing.Color.White
+        Me.lblNamaUltah.AutoSize = True
+        Me.lblNamaUltah.BackColor = System.Drawing.Color.Transparent
         Me.lblNamaUltah.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNamaUltah.Location = New System.Drawing.Point(569, 93)
+        Me.lblNamaUltah.Location = New System.Drawing.Point(716, 96)
         Me.lblNamaUltah.Name = "lblNamaUltah"
-        Me.lblNamaUltah.Size = New System.Drawing.Size(264, 36)
+        Me.lblNamaUltah.Size = New System.Drawing.Size(125, 21)
         Me.lblNamaUltah.TabIndex = 19
         Me.lblNamaUltah.Text = "Nama Pegawai"
         Me.lblNamaUltah.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -702,7 +743,7 @@ Partial Class MenuUtama
         '
         Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(847, 63)
+        Me.PictureBox2.Location = New System.Drawing.Point(847, 59)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(74, 81)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -713,7 +754,7 @@ Partial Class MenuUtama
         '
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(928, 63)
+        Me.PictureBox1.Location = New System.Drawing.Point(928, 59)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(74, 81)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -724,7 +765,7 @@ Partial Class MenuUtama
         '
         Me.PictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(928, 150)
+        Me.PictureBox3.Location = New System.Drawing.Point(928, 146)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(74, 81)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -741,30 +782,13 @@ Partial Class MenuUtama
         Me.Timer2.Enabled = True
         Me.Timer2.Interval = 5000
         '
-        'ToolStripEx6
+        'ToolStripButton10
         '
-        Me.ToolStripEx6.AutoSize = False
-        Me.ToolStripEx6.Dock = System.Windows.Forms.DockStyle.None
-        Me.ToolStripEx6.Font = New System.Drawing.Font("Segoe UI", 8.25!)
-        Me.ToolStripEx6.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.ToolStripEx6.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
-        Me.ToolStripEx6.Image = Nothing
-        Me.ToolStripEx6.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton8})
-        Me.ToolStripEx6.Location = New System.Drawing.Point(471, 1)
-        Me.ToolStripEx6.Name = "ToolStripEx6"
-        Me.ToolStripEx6.Office12Mode = False
-        Me.ToolStripEx6.Size = New System.Drawing.Size(148, 86)
-        Me.ToolStripEx6.TabIndex = 2
-        '
-        'ToolStripButton8
-        '
-        Me.ToolStripButton8.Image = CType(resources.GetObject("ToolStripButton8.Image"), System.Drawing.Image)
-        Me.ToolStripButton8.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.ToolStripButton8.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton8.Name = "ToolStripButton8"
-        Me.ToolStripButton8.Size = New System.Drawing.Size(121, 69)
-        Me.ToolStripButton8.Text = "Laporan Tanda Terima"
-        Me.ToolStripButton8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.ToolStripButton10.Image = CType(resources.GetObject("ToolStripButton10.Image"), System.Drawing.Image)
+        Me.ToolStripButton10.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton10.Name = "ToolStripButton10"
+        Me.ToolStripButton10.Size = New System.Drawing.Size(102, 20)
+        Me.ToolStripButton10.Text = "Rekap Hutang"
         '
         'MenuUtama
         '
@@ -782,6 +806,7 @@ Partial Class MenuUtama
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.StatusBarExt1)
         Me.Controls.Add(Me.RibbonControlAdv2)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "MenuUtama"
         Me.Padding = New System.Windows.Forms.Padding(1, 0, 1, 1)
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -792,6 +817,7 @@ Partial Class MenuUtama
         Me.RibbonControlAdv2.ResumeLayout(False)
         Me.RibbonControlAdv2.PerformLayout()
         Me.ToolStripTabItem1.Panel.ResumeLayout(False)
+        Me.ToolStripTabItem1.Panel.PerformLayout()
         Me.ToolStripEx1.ResumeLayout(False)
         Me.ToolStripEx1.PerformLayout()
         Me.ToolStripEx3.ResumeLayout(False)
@@ -801,6 +827,8 @@ Partial Class MenuUtama
         Me.ToolStripEx4.PerformLayout()
         Me.ToolStripEx5.ResumeLayout(False)
         Me.ToolStripEx5.PerformLayout()
+        Me.ToolStripEx6.ResumeLayout(False)
+        Me.ToolStripEx6.PerformLayout()
         Me.MenuKoneksi.Panel.ResumeLayout(False)
         Me.ToolStripEx2.ResumeLayout(False)
         Me.ToolStripEx2.PerformLayout()
@@ -813,9 +841,8 @@ Partial Class MenuUtama
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ToolStripEx6.ResumeLayout(False)
-        Me.ToolStripEx6.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents RibbonControlAdv1 As Syncfusion.Windows.Forms.Tools.RibbonControlAdv
@@ -870,4 +897,5 @@ Partial Class MenuUtama
     Friend WithEvents ToolStripButton4 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripEx6 As Syncfusion.Windows.Forms.Tools.ToolStripEx
     Friend WithEvents ToolStripButton8 As System.Windows.Forms.ToolStripButton
+    Friend WithEvents ToolStripButton10 As ToolStripButton
 End Class

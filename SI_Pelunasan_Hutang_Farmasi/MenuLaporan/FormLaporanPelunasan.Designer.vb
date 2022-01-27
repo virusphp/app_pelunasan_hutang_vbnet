@@ -24,6 +24,9 @@ Partial Class FormLaporanPelunasan
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormLaporanPelunasan))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.cmbJenisBarang = New System.Windows.Forms.ComboBox()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.cmbValidasi = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -46,9 +49,6 @@ Partial Class FormLaporanPelunasan
         Me.GridLaporan = New System.Windows.Forms.DataGridView()
         Me.Column1 = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.cmbJenisBarang = New System.Windows.Forms.ComboBox()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.txtTotalBayar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -81,6 +81,33 @@ Partial Class FormLaporanPelunasan
         Me.GroupBox1.Size = New System.Drawing.Size(1247, 64)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
+        '
+        'Button4
+        '
+        Me.Button4.Image = CType(resources.GetObject("Button4.Image"), System.Drawing.Image)
+        Me.Button4.Location = New System.Drawing.Point(859, 34)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(28, 23)
+        Me.Button4.TabIndex = 79
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'cmbJenisBarang
+        '
+        Me.cmbJenisBarang.BackColor = System.Drawing.SystemColors.Info
+        Me.cmbJenisBarang.FormattingEnabled = True
+        Me.cmbJenisBarang.Location = New System.Drawing.Point(703, 35)
+        Me.cmbJenisBarang.Name = "cmbJenisBarang"
+        Me.cmbJenisBarang.Size = New System.Drawing.Size(153, 21)
+        Me.cmbJenisBarang.TabIndex = 78
+        '
+        'Label6
+        '
+        Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label6.Location = New System.Drawing.Point(703, 12)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(153, 20)
+        Me.Label6.TabIndex = 77
+        Me.Label6.Text = "Jenis Barang"
         '
         'cmbValidasi
         '
@@ -244,7 +271,7 @@ Partial Class FormLaporanPelunasan
         'txtTotalBayar
         '
         Me.txtTotalBayar.BackGroundColor = System.Drawing.SystemColors.Info
-        Me.txtTotalBayar.BeforeTouchSize = New System.Drawing.Size(205, 20)
+        Me.txtTotalBayar.BeforeTouchSize = New System.Drawing.Size(87, 20)
         Me.txtTotalBayar.BorderColor = System.Drawing.Color.DimGray
         Me.txtTotalBayar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtTotalBayar.Culture = New System.Globalization.CultureInfo("en-US")
@@ -277,7 +304,7 @@ Partial Class FormLaporanPelunasan
         'txtNota
         '
         Me.txtNota.BackGroundColor = System.Drawing.SystemColors.Info
-        Me.txtNota.BeforeTouchSize = New System.Drawing.Size(205, 20)
+        Me.txtNota.BeforeTouchSize = New System.Drawing.Size(87, 20)
         Me.txtNota.BorderColor = System.Drawing.Color.DimGray
         Me.txtNota.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtNota.Culture = New System.Globalization.CultureInfo("en-US")
@@ -320,33 +347,6 @@ Partial Class FormLaporanPelunasan
         Me.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
         Me.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
         '
-        'Button4
-        '
-        Me.Button4.Image = CType(resources.GetObject("Button4.Image"), System.Drawing.Image)
-        Me.Button4.Location = New System.Drawing.Point(859, 34)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(28, 23)
-        Me.Button4.TabIndex = 79
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'cmbJenisBarang
-        '
-        Me.cmbJenisBarang.BackColor = System.Drawing.SystemColors.Info
-        Me.cmbJenisBarang.FormattingEnabled = True
-        Me.cmbJenisBarang.Location = New System.Drawing.Point(703, 35)
-        Me.cmbJenisBarang.Name = "cmbJenisBarang"
-        Me.cmbJenisBarang.Size = New System.Drawing.Size(153, 21)
-        Me.cmbJenisBarang.TabIndex = 78
-        '
-        'Label6
-        '
-        Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label6.Location = New System.Drawing.Point(703, 12)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(153, 20)
-        Me.Label6.TabIndex = 77
-        Me.Label6.Text = "Jenis Barang"
-        '
         'FormLaporanPelunasan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -355,6 +355,7 @@ Partial Class FormLaporanPelunasan
         Me.Controls.Add(Me.GridLaporan)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FormLaporanPelunasan"
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

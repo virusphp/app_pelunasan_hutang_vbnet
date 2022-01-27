@@ -16,13 +16,23 @@ Module koneksi
     Public BD As New BindingSource
     Public FormPemanggil As String
 
+
+    Public KoneksiStringSIMRS As String
+    'Public KoneksiSIMRS As OleDbConnection
+
     Public Sub GetDatabaseSetting()
         dbServer = My.Settings.dbServer
         dbUser = My.Settings.dbUser
         dbPassword = Enkripsi.Dekrip(My.Settings.dbPassword)
         dbName = My.Settings.dbName
-        sLocalConn = "server=" & dbServer & ";user id=" & dbUser & ";" & _
+        sLocalConn = "server=" & dbServer & ";user id=" & dbUser & ";" &
                      "password=" & dbPassword & ";database=" & dbName
+
+        KoneksiStringSIMRS = "Provider=SQLOLEDB;" &
+              "Data Source=" & dbServer & ";" &
+             "Initial Catalog=" & dbName & ";" &
+             "Persist Security Info=True;User ID=" & dbUser & ";" &
+             "Password=" & dbPassword
     End Sub
 
     Public Function DatabaseConnected(Optional ByVal Server As String = "", _

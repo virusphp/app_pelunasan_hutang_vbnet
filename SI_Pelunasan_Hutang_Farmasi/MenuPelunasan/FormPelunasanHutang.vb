@@ -1,8 +1,7 @@
-﻿Imports Syncfusion.Windows.Forms
+﻿
 Imports System.Data.SqlClient
 
 Public Class FormPelunasanHutang
-    Inherits MetroForm
     Dim BDSupplier, BDNotaBeli, BDLunas As New BindingSource
     Dim DSLunas As New DataSet
     Dim DRWLunas As DataRowView
@@ -55,6 +54,7 @@ Public Class FormPelunasanHutang
             .Columns(4).Width = 140
             .Columns.Add("notaBeli", "Nota Beli")
             .Columns(5).Visible = False
+            .AlternatingRowsDefaultCellStyle.BackColor = Color.LightYellow
         End With
     End Sub
 
@@ -80,6 +80,7 @@ Public Class FormPelunasanHutang
                 .Columns(4).HeaderText = "No Telepon"
                 .Columns(4).Width = 150
                 .ReadOnly = True
+                .AlternatingRowsDefaultCellStyle.BackColor = Color.LightYellow
             End With
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -126,7 +127,7 @@ Public Class FormPelunasanHutang
                 .Columns(10).DefaultCellStyle.Format = "N2"
                 .Columns(10).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
                 .Columns(10).Width = 85
-              
+                .AlternatingRowsDefaultCellStyle.BackColor = Color.LightYellow
                 .ReadOnly = True
             End With
         Catch ex As Exception
@@ -155,7 +156,7 @@ Public Class FormPelunasanHutang
 
         AturGrid()
         TotalHarga()
-        txtQty.DecimalValue = gridPelunasan.Rows.Count() - 1
+        txtQty.DecimalValue = gridPelunasan.Rows.Count()
     End Sub
 
     Sub AturGrid()
@@ -259,6 +260,11 @@ Public Class FormPelunasanHutang
 
     Private Sub txtKodeSupplier_KeyDown(sender As Object, e As KeyEventArgs) Handles txtKodeSupplier.KeyDown
         If e.KeyCode = Keys.Enter Then
+            PanelSupplier.Width = 683
+            PanelSupplier.Height = 318
+            PanelSupplier.Top = 98
+            PanelSupplier.Left = 104
+
             TampilSupplier()
             PanelSupplier.Visible = True
             txtCariSupplier.Clear()
@@ -281,7 +287,7 @@ Public Class FormPelunasanHutang
     End Sub
 
     Private Sub txtCariSupplier_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtCariSupplier.KeyPress
-          End Sub
+    End Sub
 
     Private Sub txtCariSupplier_TextChanged(sender As Object, e As EventArgs) Handles txtCariSupplier.TextChanged
         Try
@@ -336,19 +342,15 @@ Public Class FormPelunasanHutang
 
     Private Sub txtNotaBeli_KeyDown(sender As Object, e As KeyEventArgs) Handles txtNotaBeli.KeyDown
         If e.KeyCode = Keys.Enter Then
+            PanelNotaBeli.Top = 135
+            PanelNotaBeli.Left = 104
+            PanelNotaBeli.Width = 733
+            PanelNotaBeli.Height = 314
             TampilNotaBeli()
             PanelNotaBeli.Visible = True
             txtCariFaktur.Clear()
             txtCariFaktur.Focus()
         End If
-    End Sub
-
-    Private Sub txtNotaBeli_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtNotaBeli.KeyPress
-
-    End Sub
-
-    Private Sub txtNotaBeli_TextChanged(sender As Object, e As EventArgs) Handles txtNotaBeli.TextChanged
-
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -450,13 +452,13 @@ Public Class FormPelunasanHutang
         gridPelunasan.Rows(e.RowIndex).HeaderCell.Value = CStr(e.RowIndex + 1)
     End Sub
 
-    Private Sub ButtonAdv2_Click(sender As Object, e As EventArgs) Handles ButtonAdv2.Click
+    Private Sub cmdHapusBaris_Click(sender As Object, e As EventArgs) Handles cmdHapusBaris.Click
         If MessageBox.Show("Yakin Akan Dihapus?", "", MessageBoxButtons.YesNo) = Windows.Forms.DialogResult.Yes Then
             Try
                 If gridPelunasan.CurrentRow.Index <> gridPelunasan.NewRowIndex Then
                     gridPelunasan.Rows.RemoveAt(gridPelunasan.CurrentRow.Index)
                 End If
-                txtQty.DecimalValue = gridPelunasan.Rows.Count() - 1
+                txtQty.DecimalValue = gridPelunasan.Rows.Count()
                 TotalHarga()
                 btnAdd.Focus()
             Catch ex As Exception
@@ -474,18 +476,18 @@ Public Class FormPelunasanHutang
         kosongkanHeader()
     End Sub
 
-	Private Sub txtSPM_LostFocus(sender As Object, e As EventArgs) Handles txtSPM.LostFocus
-		If txtSPM.Text <> "" Then
-			CariSPM()
-			If DR.HasRows Then
-				MsgBox("No SPM sudah ada", vbInformation, "Informasi")
-				txtSPM.Focus()
-			End If
-		End If
+    Private Sub txtSPM_LostFocus(sender As Object, e As EventArgs) Handles txtSPM.LostFocus
+        If txtSPM.Text <> "" Then
+            CariSPM()
+            If DR.HasRows Then
+                MsgBox("No SPM sudah ada", vbInformation, "Informasi")
+                txtSPM.Focus()
+            End If
+        End If
 
-	End Sub
+    End Sub
 
-	Private Sub btnSimpan_Click(sender As Object, e As EventArgs) Handles btnSimpan.Click
+    Private Sub btnSimpan_Click(sender As Object, e As EventArgs) Handles btnSimpan.Click
         If txtQty.DecimalValue = 0 Then
             MsgBox("Data belum masuk", vbInformation, "Informasi")
             Exit Sub
@@ -500,8 +502,22 @@ Public Class FormPelunasanHutang
             Try
                 sqlSimpan = "insert into ap_anghutang_header(tglbayar,nobayar,totalbayar,totalbayarbulat) values ('" & Format(DTPTanggalTrans.Value, "yyyy/MM/dd") & "', '" & Trim(txtSPM.Text) & "', '" & Num_En_US(txtGrandJumlahHarga.DecimalValue) & "', '" & Num_En_US(txtGrandJumlahHargaBulat.DecimalValue) & "')"
 
-                For i = 0 To gridPelunasan.RowCount - 2
-                    sqlSimpan = sqlSimpan + vbCrLf + "insert into ap_anghutang (kdkasir, nmkasir, tglbayar, nobayar, keterangan, nomer, kdsuplier, nmsuplier, notabeli, tglfaktur, nofaktur, jmlangsur, posting, a2) values ('" & Trim(FormLogin.LabelKode.Text) & "', '" & Trim(FormLogin.LabelNama.Text) & "', '" & Format(DTPTanggalTrans.Value, "yyyy/MM/dd") & "', '" & Trim(txtSPM.Text) & "', '" & Trim(txtKeterangan.Text) & "', " & i + 1 & ", '" & Trim(txtKodeSupplier.Text) & "', '" & Trim(txtSupplier.Text) & "', '" & Trim(gridPelunasan.Rows(i).Cells("notaBeli").Value) & "', '" & Format(gridPelunasan.Rows(i).Cells("tglFaktur").Value, "yyyy/MM/dd") & "', '" & Trim(gridPelunasan.Rows(i).Cells("noFaktur").Value) & "',  '" & Num_En_US(gridPelunasan.Rows(i).Cells("jmlBayar").Value) & "','1', '" & Trim(gridPelunasan.Rows(i).Cells("a2").Value) & "')"
+                For i = 0 To gridPelunasan.RowCount - 1
+                    sqlSimpan = sqlSimpan + vbCrLf + "insert into ap_anghutang (kdkasir, nmkasir, tglbayar, nobayar, keterangan, 
+nomer, kdsuplier, nmsuplier, notabeli, tglfaktur, nofaktur, jmlangsur, posting, a2) values (" &
+                                "'" & sesiAplikasi.sesiUID & "', " &
+                                "'" & sesiAplikasi.sesiNamaUser & "', " &
+                                "'" & Format(DTPTanggalTrans.Value, "yyyy/MM/dd") & "', " &
+                                "'" & Trim(txtSPM.Text) & "', " &
+                                "'" & Trim(txtKeterangan.Text) & "', " &
+                                "" & i + 1 & ", " &
+                                "'" & Trim(txtKodeSupplier.Text) & "', " &
+                                "'" & Trim(txtSupplier.Text) & "', '" &
+                                "" & Trim(gridPelunasan.Rows(i).Cells("notaBeli").Value) & "', " &
+                                "'" & Format(gridPelunasan.Rows(i).Cells("tglFaktur").Value, "yyyy/MM/dd") & "'," &
+                                "'" & Trim(gridPelunasan.Rows(i).Cells("noFaktur").Value) & "',  " &
+                                "'" & Num_En_US(gridPelunasan.Rows(i).Cells("jmlBayar").Value) & "','1', " &
+                                "'" & Trim(gridPelunasan.Rows(i).Cells("a2").Value) & "')"
                 Next
 
                 For i = 0 To gridPelunasan.RowCount - 2
@@ -543,7 +559,7 @@ Public Class FormPelunasanHutang
 
     End Sub
 
-    Private Sub GroupBox4_Enter(sender As Object, e As EventArgs) Handles GroupBox4.Enter
+    Private Sub GroupBox4_Enter(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -557,11 +573,11 @@ Public Class FormPelunasanHutang
 
     End Sub
 
-	Private Sub txtSPM_RightToLeftChanged(sender As Object, e As EventArgs) Handles txtSPM.RightToLeftChanged
+    Private Sub txtSPM_RightToLeftChanged(sender As Object, e As EventArgs) Handles txtSPM.RightToLeftChanged
 
-	End Sub
+    End Sub
 
-	Private Sub txtSPM_SystemColorsChanged(sender As Object, e As EventArgs) Handles txtSPM.SystemColorsChanged
+    Private Sub txtSPM_SystemColorsChanged(sender As Object, e As EventArgs) Handles txtSPM.SystemColorsChanged
 
-	End Sub
+    End Sub
 End Class
